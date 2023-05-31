@@ -1,11 +1,27 @@
-import  { FC } from 'react'
-import style from './Apartments.module.scss'
+import { FC } from "react";
+
+import backgrounA from "public/assets/background/background3.png";
+import { url } from "inspector";
 
 const Apartments: FC = () => {
-  return (
-    <div className= {style.home}>
-    </div>
-  )
-}
+  const styling = {
+    backgroundmage: "url(public/assets/background/background3.png)",
+    width: "100%",
+    height: "1200px",
+  };
 
-export default Apartments
+  return (
+    <div>
+      <div
+        style={{
+          backgroundImage: "",
+          width: '100%',
+          height: '1200px',
+          padding:"100px"
+        }}
+      ></div>
+    </div>
+  );
+};
+
+export default Apartments;
