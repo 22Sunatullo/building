@@ -1,0 +1,10 @@
+.ourAd {
+    @apply container py-[100px] border-b-2 border-[#A58038];
+}
+
+.data {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 198px, 198px;
+    gap: 24px;
+}
