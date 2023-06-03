@@ -1,18 +1,15 @@
-import Image from "next/image";
-import { FC } from "react";
-import style from './Adres.module.scss';
+import AdresCard from "../adrescard/AdresCard";
+import React from "react";
+import Data from "./AdresData";
 
-import logo3 from "public/assets/logo/logo 3.png";
-
-const Adres: FC = () => {
+const Adres = () => {
+  const adresData = Data.map((el) => {
+    return <AdresCard title={el.title} Adrestext={el.text} id={el.id} />;
+  });
   return (
-    <div className={style.addcont}>
-      <div className={style.imgCont}>
-        <Image src={logo3} alt="dd" />
-      </div>
-      <div className="titleadres">
-        <h3>Адрес застройки</h3>
-        <p>Нусратулло Махсум дом 75</p>
+    <div className="container">
+      <div className="flex justify-between py-[100px] border-b-2 border-[#A58038] ">
+        {adresData}
       </div>
     </div>
   );

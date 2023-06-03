@@ -13,7 +13,8 @@ export default function Home() {
       <Wrapper>
         <Aboutcomplex />
         <Linecont />
-        <Adres/>
+        <Adres />
+        <Linecont />
       </Wrapper>
     </div>
   );
