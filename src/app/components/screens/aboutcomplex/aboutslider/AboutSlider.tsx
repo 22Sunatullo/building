@@ -13,7 +13,6 @@ const AboutSlider: FC = () => {
     <div className="container flex items-end ">
       <div className={styles.cheir}>
         <Image src={slider1} alt="cheir" />
-          
       </div>
       <div className="flex">
         <button>
