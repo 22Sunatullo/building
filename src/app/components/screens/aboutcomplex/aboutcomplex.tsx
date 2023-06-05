@@ -10,11 +10,6 @@ const Aboutcomplex: FC = () => {
       <div className={styles.complex}>
         <Aboutcoment />
         <AboutSlider />
-        <div className="">
-         
-          
-          <a href="#"></a>
-        </div>
       </div>
     </div>
   );
