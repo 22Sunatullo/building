@@ -1,8 +1,8 @@
-import React from "react";
+import style from "./Card2.module.scss";
 
 export const Card2 = () => {
   return (
-    <div className={style.}>
+    <div className={style.card2}>
       <h1>Застройщик</h1>
       <p>
         ООО «Сохтмони Осиёи Маркази» реализует строительство

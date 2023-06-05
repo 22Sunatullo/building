@@ -17,7 +17,7 @@ function OurAdvatages() {
   return (
     <>
       <div className={style.ourAd}>
-        <h1 className={style.titleOur}>Наши преимущества</h1>
+        <h1>Наши преимущества</h1>
         <div className={style.data}>
           {dataMap}
         </div>

@@ -1,0 +1,21 @@
+.gelerycont {
+    background-image: url('/assets/background/background 2.png');
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+    
+
+}
+
+.glrcont {
+    @apply flex items-end justify-between;
+    padding: 450px 90px;
+}   
+
+.gelery {
+    h1 {
+        margin-top: 50px;
+        margin-bottom: 48px;
+    }
+}

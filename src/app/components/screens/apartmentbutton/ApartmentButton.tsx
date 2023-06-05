@@ -15,7 +15,7 @@ const ApartmentButton: FC = () => {
       </div>
       <div className={styles.btnClass}>
         <button>Квартиры</button>
-        <Image src={logoImage} width={150} height={50}/>
+        <Image src={logoImage} width={150} height={50} alt="sss"/>
       </div>
     </div>
   );

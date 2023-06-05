@@ -1,0 +1,33 @@
+.perfect {
+    background-image: url('/assets/background/background1.png');
+    height: 680px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+    margin-top: 50px;
+    text-align: center;
+    padding: 204px 0;
+
+    h1 {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 56px;
+        width: 993px;
+        margin: 10px auto;
+    }
+
+    p {
+        width: 993px;
+        font-weight: 300;
+        font-size: 19px;
+        line-height: 32px;
+        text-align: center;
+
+        color: #FFFFFF;
+        margin: 20px auto;
+
+    }
+    button{
+        margin-top: 20px;
+    }
+}
