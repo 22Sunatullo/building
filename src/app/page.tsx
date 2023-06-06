@@ -12,8 +12,7 @@ import { Headers } from "./components/screens/headers/Headers";
 import Linecont from "./components/screens/linecont/Linecont";
 import { PerfectApartment } from "./components/screens/perfectApartment/PerfectApartment";
 import { Wrapper } from "./components/screens/wraper/Wraper";
-import Apartment from "./components/screens/Apartment/Apartment";
-
+import Apartment from "./components/screens/Apartment/Apartment"; 
 
 export default function Home() {
   return (

@@ -1,27 +1,45 @@
+"use client";
 import Image from "next/image";
 import { FC } from "react";
 import styles from "./AboutSlider.module.scss";
 
-import slider1 from "public/assets/slider/Rectangle 8.png";
-import slider2 from "public/assets/slider/Rectangle 11.png";
 
-import logoS from "public/assets/logo/logo5.png";
-import logo6 from "public/assets/logo/logo6.png";
+import { SwiperSlide, Swiper } from "swiper/react";
+import "swiper/css";
+import { Navigation, Pagination} from "swiper";
+import "swiper/css/navigation";
+
+
+
+
 
 const AboutSlider: FC = () => {
   return (
-    <div className="container flex items-end ">
-      <div className={styles.cheir}>
-        <Image src={slider1} alt="cheir" />
-      </div>
-      <div className="flex">
-        <button>
-          <Image src={logoS} alt="logo5" />
-        </button>
-        <button>
-          <Image src={logo6} alt="logo5" />
-        </button>
-      </div>
+    <div className="container flex items-end over overflow-hidden">
+      <Swiper pagination={{
+          type: "progressbar",
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
+        slidesPerView={2}
+        >
+        <SwiperSlide>
+          <div className={styles.cheir}>
+            <Image src="/assets/slider/Rectangle 11.png" width={400} height={250}   alt="cheir" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className={styles.cheir}>
+            <Image src="/assets/slider/Rectangle 11.png"  width={400} height={250}  alt="cheir" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className={styles.cheir}>
+            <Image src="/assets/slider/Rectangle 11.png"  width={400} height={250}  alt="cheir" />
+          </div>
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 };

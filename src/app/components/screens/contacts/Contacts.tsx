@@ -1,6 +1,6 @@
 import Data from "./DataContact";
 import { ContactCard } from "./contactcard/ContactCard";
-import { locationD } from "../location/location";
+import { LocationD, locationD } from "../location/location";
 
 import style from "./Contacts.module.scss";
 
@@ -12,6 +12,7 @@ export const Contacts = () => {
   return (
     <div className={style.wapc}>
       <div className={style.contw}>{contactCard}</div>
+      <LocationD/>
     </div>
   );
 };
