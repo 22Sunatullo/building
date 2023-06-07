@@ -9,7 +9,7 @@ import { Wrapper } from "../wraper/Wraper";
 export const Headers: FC = () => {
   return (
     <Wrapper>
-      <div>
+      <header className={style.fixhead}>
         <nav className={style.container}>
           <nav className={style.start}>
             <Image src={logoImage} alt="dd" />
@@ -38,7 +38,7 @@ export const Headers: FC = () => {
             <Buttons />
           </nav>
         </nav>
-      </div>
+      </header>
     </Wrapper>
   );
 };
