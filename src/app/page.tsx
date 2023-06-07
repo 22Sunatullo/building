@@ -28,14 +28,14 @@ export default function Home() {
         <Linecont />
         <Gelery />
         <Apartment/>
-        <Consultation title='Индивидуальная консультация' text='Наши специалисты подберут для Вас самые лучшие условия приобретения квартиры    всего за 10 минут' />
+        <Consultation btns="Отправить" title='Индивидуальная консультация' text='Наши специалисты подберут для Вас самые лучшие условия приобретения квартиры    всего за 10 минут' />
         <Linecont />
         <PerfectApartment />
         <AreaAdres />
         <Linecont />
         <Develope/>
         <Contacts/>
-        <Consultation title='Оставьте заявку'/>
+        <Consultation btns="Отправить" title='Оставьте заявку'/>
       </Wrapper>
       <Footer />  
     </div>

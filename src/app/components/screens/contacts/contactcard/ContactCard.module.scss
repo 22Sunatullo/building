@@ -4,9 +4,12 @@
     align-items: flex-start;
     padding: 16px;
     gap: 16px;
-
     width: auto;
-    height: auto;
+    height: 90px;
+
+    &:last-of-type {
+        grid-column: span 2;
+    }
 
     /* Main 2 */
 

@@ -1,10 +1,15 @@
+'use client'
+import { useState } from "react";
+import { ApartmentList } from "./ApartmentList/ApartmentList";
+import { ApartmentCategories } from "./ApartmentsData";
 
-import ApartmentCard from "./ApartmentCard/ApartmentCard";
-import { ApartmentsData } from "./ApartmentsData";
 import "./style.css";
 
 function Apartment() {
-  const filterRoom = ApartmentsData.map((el) => <ApartmentCard key={el.id} {...el} />);
+ const [apartCategoriesId, setApartCategoriesId ] = useState(ApartmentCategories[0]?.id)
+
+ const activeApartment = ApartmentCategories.find(el => apartCategoriesId == el.id)
+ 
 
   return (
     <>
@@ -13,24 +18,11 @@ function Apartment() {
           Выберите квартиру
         </h1>
         <div className="flex gap-6 mb-[60px]">
-          <button  className="btnApr">
-            Все квартиры
-          </button>
-          <button className="btnApr">
-            1-комнатная
-          </button>
-          <button  className="btnApr">
-            2-комнатная
-          </button>
-          <button  className="btnApr">
-            3-комнатная
-          </button>
-          <button  className="btnApr">
-            4+
-          </button>
-        </div>
-        <div className="dataApr grid grid-cols-4 gap-10 p-7 mb-[60px]">
-          {filterRoom}
+          {ApartmentCategories.map(el => <button onClick={()=>{setApartCategoriesId(el.id)}} className="btnApr" key={el.id}>{el.name}</button>)}
+          
+          </div>
+        <div >
+          {activeApartment !== undefined && <ApartmentList apartments={activeApartment?.apartments}/>}
         </div>
       </div>
     </>

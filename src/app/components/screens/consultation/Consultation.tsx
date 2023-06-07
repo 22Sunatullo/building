@@ -1,7 +1,10 @@
 
 import './style.css'
 
-function Consultation({ title, text }: { title: string, text?: string }) {
+
+function Consultation({ title, text, btns }: { title: string, text?: string, btns: string }) {
+  
+
     return (
         <div className='container'>
             <div className="formBody p-7 flex items-center justify-between">
@@ -18,7 +21,7 @@ function Consultation({ title, text }: { title: string, text?: string }) {
                         <input type="text" name="floating_password2" id="floating_password2" className="block py-2.5 px-[20px] w-[272px]  text-[15px] text-gray-900 rounded-[12px] bg-[#FFFFFF] border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 font-bold focus:outline-none h-[64px] focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
                         <label htmlFor="floating_password2" className="peer-focus:font-medium absolute text-[13px]  px-[20px] text-[#9A9DA3] dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-5 z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Ваш номер телефона</label>
                     </div>
-                    <button type="submit" className="text-white bg-[#073535] focus:ring-4 px-[72px] h-[64px] focus:outline-none rounded-lg text-[15px] font-bold sm:w-auto text-center">Отправить</button>
+                    <button type="submit" className="text-white bg-[#073535] focus:ring-4 px-[72px] h-[64px] focus:outline-none rounded-lg text-[15px] font-bold sm:w-auto text-center">{btns}</button>
                 </form>
             </div>
         </div>
