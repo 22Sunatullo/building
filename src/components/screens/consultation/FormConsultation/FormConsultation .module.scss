@@ -1,0 +1,38 @@
+.inputConsultation { 
+  form{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px
+  }
+  button {
+    padding: 8px 20px;
+
+    width: 202px;
+    height: 64px;
+
+    /* Background */
+
+    background: #073535;
+    border-radius: 12px;
+
+  }
+
+  label {
+    color: #9A9DA3;
+  }
+}
+
+.inputdiv {
+  @apply relative z-0 w-full mb-6;
+  padding: 8px 20px;
+
+  width: 272px;
+  height: 64px;
+  padding: 20px;
+
+  /* White */
+
+  background: #FFFFFF;
+  border-radius: 12px;
+
+}
