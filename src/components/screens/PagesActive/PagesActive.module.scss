@@ -1,0 +1,27 @@
+.acivestyle {
+    @apply container flex items-center;
+    gap: 15px;
+
+    h5 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.72);
+    }
+
+    span {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        /* identical to box height, or 160% */
+
+
+        /* Day/Text & Icons/text-01 (inverse) */
+
+        color: #FFFFFF;
+
+    }
+}

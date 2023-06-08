@@ -1,7 +1,11 @@
 .container{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 15px auto;
+    max-width: 1250px;
+    min-width: auto;
+
    
     ul{
         display: flex;
@@ -27,5 +31,7 @@
     right: 0;
     background-color: #073535;
     top: 0;
-    margin-bottom: 40px;
+}
+.wraperFix{
+    height: 100px;
 }

@@ -2,17 +2,15 @@ import { FC } from "react";
 import Image from "next/image";
 import Buttons from "../buttons/Buttons";
 
-import logoImage from "public/assets/logo/logo2.png";
 import style from "./Headers.module.scss";
-import { Wrapper } from "../wraper/Wraper";
 
 export const Headers: FC = () => {
   return (
-    <Wrapper>
+    <div className={style.wraperFix}>
       <header className={style.fixhead}>
         <nav className={style.container}>
           <nav className={style.start}>
-            <Image src={logoImage} alt="dd" />
+            <Image src={"/assets/logo/logo2.png"} width={150} height={150} alt="dd" />
           </nav>
           <nav className="between">
             <ul>
@@ -39,6 +37,6 @@ export const Headers: FC = () => {
           </nav>
         </nav>
       </header>
-    </Wrapper>
+    </div>
   );
 };
