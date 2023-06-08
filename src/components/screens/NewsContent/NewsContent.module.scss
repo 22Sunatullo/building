@@ -1,1 +1,17 @@
+.buttonS {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 20px;
+    gap: 1px;
 
+    width: 240px;
+    height: 56px;
+
+    /* White */
+
+    border: 1px solid #FFFFFF;
+    border-radius: 12px;
+    margin: 50px auto;
+}
