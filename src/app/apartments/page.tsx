@@ -15,7 +15,7 @@ export default function News() {
 
       <Wrapper>
         <PagesActive />
-        <SelectApartments/>
+        <SelectApartments lines = {true}/>
         <Consultation title="Индивидуальная консультация" text="Наши специалисты подберут для Вас самые лучшие условия приобретения квартиры    всего за 10 минут" btns="Отправить"/>
         <InstallmentPlan/>
         <Linecont/>

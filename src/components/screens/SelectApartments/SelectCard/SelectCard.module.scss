@@ -1,0 +1,33 @@
+.cardStyle {
+    position: relative;
+
+    background: #FFFFFF;
+    width: 260px;
+    height: 264px;
+    border-radius: 25px;
+
+    img {
+        margin: 30px auto;
+    }
+
+
+}
+
+.title {
+    color: #073535;
+    background: #F5F8F7;
+    border-radius: 6px;
+    width: 173px;
+    height: 28px;
+    text-align: center;
+    h4 {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+.contentT{
+    p{
+      @apply  flex justify-between
+    }
+}
