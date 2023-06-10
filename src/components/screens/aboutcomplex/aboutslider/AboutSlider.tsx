@@ -1,109 +1,63 @@
-"use client";
-import Image from "next/image";
-import { FC } from "react";
-import styles from "./AboutSlider.module.scss";
+"use client"
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import { SwiperSlide, Swiper } from "swiper/react";
+// Import Swiper styles
 import "swiper/css";
-import { Navigation, Pagination } from "swiper";
-import "swiper/css/navigation";
-import { useState } from 'react'
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
 
-const AboutSlider: FC = () => {
-  const [activeIndex, setActiveIndex] = useState(0)
-  let prevId = 'instagram-nav-prev'
-  let nextId = 'instagram-nav-next'
-  let paginationId = 'instagram-pagination'
 
+// import required modules
+import { EffectCoverflow, Pagination } from "swiper";
+
+export default function App() {
   return (
-    <div className="container flex items-end over overflow-hidden">
+    <>
       <Swiper
-        pagination={{
-          type: "progressbar",
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={2}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
         }}
-        navigation={{
-          prevEl: `#${prevId}`,
-          nextEl: `#${nextId}`,
-          enabled: true,
-        }}
-        breakpoints={{
-          480: {
-            spaceBetween: 28,
-          },
-          769: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-            centeredSlides: false,
-          },
-          1360: {
-            slidesPerView: 2,
-            spaceBetween: 48,
-            centeredSlides: false,
-          }
-        }}
-        autoHeight
-        onAfterInit={(swiper) => {
-          setActiveIndex(swiper.activeIndex)
-        }}
-        onSlideChange={(swiper) => {
-          setActiveIndex(swiper.activeIndex)
-        }}
-        initialSlide={activeIndex}
-        centeredSlides
-        modules={[Pagination, Navigation]}
+        modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className={styles.cheir}>
-            <Image
-              src="/assets/slider/Rectangle 11.png"
-              width={400}
-              height={250}
-              alt="cheir"
-            />
-          </div>
+          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <div className={styles.cheir}>
-            <Image
-              src="/assets/slider/Rectangle 11.png"
-              width={400}
-              height={250}
-              alt="cheir"
-            />
-          </div>
+          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <div className={styles.cheir}>
-            <Image
-              src="/assets/slider/Rectangle 11.png"
-              width={400}
-              height={250}
-              alt="cheir"
-            />
-          </div>
+          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
         </SwiperSlide>
       </Swiper>
-      <div className={styles.btns}>
-        <button id={prevId}>
-          <Image
-            src="/assets/logo/logo5.png"
-            width={30}
-            height={30}
-            alt="cheir"
-          />
-        </button>
-        <button id={nextId}>
-          <Image
-            src="/assets/logo/logo6.png"
-            width={30}
-            height={30}
-            alt="cheir"
-          />
-        </button>
-      </div>
-    </div>
+    </>
   );
-};
-
-export default AboutSlider;
+}

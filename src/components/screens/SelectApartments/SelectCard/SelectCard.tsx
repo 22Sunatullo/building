@@ -1,29 +1,41 @@
 import Image from "next/image";
 import style from "./SelectCard.module.scss";
 
-export const SelectCard = () => {
+export const SelectCard = ({
+  title,
+  img,
+  square,
+  floor,
+  block,
+}: {
+  title: string;
+  img: any;
+  square: string;
+  floor: string;
+  block: string;
+}) => {
   return (
-    <div className={style.cardStyle}>
+    <div>
       <div className={style.cardContainer}>
         <div className={style.title}>
-          <h4  className="text-start text-[13px] inline-block text-white px-3 py-1 bg-[#073535] font-[300] rounded-[7px] mt-1">1-комнатная квартира</h4>
+          <h4>{title}</h4>
         </div>
-        <Image
-          width={150}
-          height={150}
-          src="assets/apartment/image.svg"
-          alt=""
-        />
+        <Image width={150} height={150} src={img} alt="" />
         <div className={style.contentT}>
-          <p>
-            <span>Площадь</span> <span>14884</span>
-          </p>
-          <p>
-            <span>Этаж</span> <span>4</span>
-          </p>
-          <p>
-            <span>Блок</span> <span>1</span>
-          </p>
+          <div>
+            <p>
+              <span>Площадь</span>{" "}
+              <span className="text-[#073535] font-bold">{square}</span>
+            </p>
+            <p>   
+              <span>Этаж</span>{" "}
+              <span className="text-[#073535] font-bold">{floor}</span>
+            </p>
+            <p>
+              <span>Блок</span>{" "}
+              <span className="text-[#073535] font-bold">{block}</span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
