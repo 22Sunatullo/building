@@ -25,7 +25,7 @@
     gap: 20px;
 
     width: 376px;
-    height: 444px;
+    height: 470px;
 
     background: #FFFFFF;
     border-radius: 24px;
@@ -35,20 +35,82 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-}
 
+    h2 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 28px;
+        /* identical to box height, or 165% */
+
+
+        /* Text 1 */
+
+        color: #141515;
+
+    }
+
+    p {
+        width: 320px;
+        height: 40px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: #434443;
+
+    }
+
+    button {
+        padding: 16px 20px;
+        gap: 1px;
+
+        width: 320px;
+        height: 56px;
+        margin-top: 15px;
+        /* Background */
+
+        background: #073535;
+        border-radius: 12px;
+
+    }
+}
 .inpt {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
     padding: 8px 20px 0px;
 
     width: 320px;
-    height: 56px;
+    height: 66px;
 
     background: #F5F8F7;
     border-radius: 12px;
     /* Inside auto layout */
-    margin-top: 20px;
+    margin-top: 15px;
 }
+
+.rc-slider-rail { 
+    position: absolute; 
+    width: 100%; 
+    background-color: #f50c0c !important; 
+    /* height: 100%; */ 
+    border-radius: 6px; 
+  }  
+  .rc-slider-track {
+    position: absolute;
+    height: 100%;
+    border-radius: 6px;
+    background-color: var(--color-red) !important;
+    opacity: 100% !important;
+  }
+  .mka__range-alignment { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: 
+    flex-start; float: left; 
+    background-color: black; 
+    padding: 10px; 
+  }  
+  .mka__range-text { 
+    display: flex; 
+    gap: 10px; 
+    color: white; 
+  }

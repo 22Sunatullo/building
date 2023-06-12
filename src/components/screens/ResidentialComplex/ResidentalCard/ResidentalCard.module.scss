@@ -1,0 +1,81 @@
+.residentalCard {
+    padding: 28px;
+    gap: 24px;
+    width: 432px;
+    height: 256px;
+    left: 48px;
+    top: 236px;
+
+    background: linear-gradient(112.92deg, rgba(255, 255, 255, 0.36) 10.45%, rgba(255, 255, 255, 0.09) 88.73%);
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 24px;
+
+    img {
+        width: 112px;
+        height: 32px;
+    }
+
+    h2 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 28px;
+        /* identical to box height, or 165% */
+
+        display: flex;
+        align-items: center;
+
+        /* White */
+
+        color: #FFFFFF;
+        margin-top: 28px;
+    }
+
+    p {
+        width: 384px;
+        height: 32px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.4px;
+        color: #141515;
+    }
+}
+
+.btnResident {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+
+    button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 24px;
+        gap: 8px;
+        width: 184px;
+        height: 44px;
+        border: 1px solid #FFFFFF;
+        border-radius: 12px;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+        transition: all .3s;
+    }
+
+    button:hover {
+        background: #073535;
+        border: none;
+    }
+}

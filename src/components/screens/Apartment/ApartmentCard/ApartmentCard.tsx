@@ -4,13 +4,28 @@ import style from './ApartamentCard.module.scss'
 
 function ApartmentCard({ title, img, square, floor, block }: { title: string, img: any, square: string, floor: string, block: string }) {
   return (
-    <div className="aprDiv bg-[#FFFFFF] relative p-5 w-[265px] h-[264px] rounded-[16px]">
-      <h4 className="text-start text-[13px] inline-block text-white px-3 py-1 bg-[#073535] font-[300] rounded-[7px]">{title}</h4>
-      <Image className="mx-auto mt-[52px]" width={150} height={150} src={img} alt="" />
-      <div className={style.hoverCl}>
-        <p className="flex justify-between"><span>Площадь</span> <span className="text-[#073535] font-bold">{square}</span></p>
-        <p className="flex justify-between"><span>Этаж</span> <span className="text-[#073535] font-bold">{floor}</span></p>
-        <p className="flex justify-between"><span>Блок</span> <span className="text-[#073535] font-bold">1{block}</span></p>
+    <div>
+         <div className={style.cardContainer}>
+        <div className={style.title}>
+          <h4>{title}</h4>
+        </div>
+        <Image width={150} height={150} src={img} alt="" />
+        <div className={style.contentT}>
+          <div>
+            <p>
+              <span>Площадь</span>{" "}
+              <span className="text-[#073535] font-bold">{square}</span>
+            </p>
+            <p>   
+              <span>Этаж</span>{" "}
+              <span className="text-[#073535] font-bold">{floor}</span>
+            </p>
+            <p>
+              <span>Блок</span>{" "}
+              <span className="text-[#073535] font-bold">{block}</span>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   )
