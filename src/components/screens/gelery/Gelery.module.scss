@@ -4,13 +4,15 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 700px;
+    position: relative;
     
 
 }
 
 .glrcont {
-    @apply flex items-end justify-between;
-    padding: 450px 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 450px 40px;
 }   
 
 .gelery {

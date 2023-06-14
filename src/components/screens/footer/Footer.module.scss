@@ -4,11 +4,6 @@
 
     p {
         text-align: center;
-        width: 1246px;
-        height: 40px;
-
-        /* Body S */
-
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
@@ -35,6 +30,9 @@
         font-weight: 200;
         font-size: 15px;
         line-height: 24px;
+    }
+    a img {
+        margin-right: 10px;
     }
 }
 
@@ -67,5 +65,17 @@
         display: flex;
         justify-content: start;
         align-items: center;
+    }
+}
+
+
+@media (max-width:480px) {
+    .content{
+        display: block;
+        justify-content: left;
+    }
+    .contentR{
+        margin-top: 5%;
+        justify-content: start;
     }
 }

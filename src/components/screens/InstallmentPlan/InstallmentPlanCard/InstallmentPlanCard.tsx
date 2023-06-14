@@ -1,6 +1,6 @@
-"use client"
-import Slider  from 'rc-slider';
-import 'rc-slider/assets/index.css';
+"use client";
+import Slider from "rc-slider";
+import "rc-slider/assets/index.css";
 import style from "./InstallmentPlanCard.module.scss";
 
 export const InstallmentPlanCard = () => {
@@ -16,19 +16,19 @@ export const InstallmentPlanCard = () => {
             <h6>Стоимость квартиры</h6>
             <label>12000 сомони</label>
             <br />
-            <Slider className={style.Range}/>
+            <input type="range" />
           </div>
           <div className={style.inpt}>
             <h6>Стоимость квартиры</h6>
             <label>50%</label>
             <br />
-            <Slider/>
+            <input type="range" />
           </div>
           <div className={style.inpt}>
             <h6>Стоимость квартиры</h6>
             <label>36 мес</label>
             <br />
-            <Slider/>
+            <input type="range" />
           </div>
           <button>Расчитать</button>
         </form>

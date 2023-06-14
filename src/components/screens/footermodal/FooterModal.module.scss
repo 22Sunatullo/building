@@ -1,12 +1,9 @@
 .cotentFoot {
-    width: 432px;
-    height: 180px;
-
+    max-width: 432px;
     background: linear-gradient(112.92deg, rgba(255, 255, 255, 0.36) 10.45%, rgba(255, 255, 255, 0.09) 88.73%);
     box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.08);
     backdrop-filter: blur(10px);
     /* Note: backdrop-filter has minimal browser support */
-
     border-radius: 12px;
     padding: 30px;
 
@@ -34,8 +31,6 @@
         border: 1px solid #FFFFFF;
         background: none;
         border-radius: 10px;
-        margin-left: 10px;
-        font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
         font-size: 13px;
@@ -53,5 +48,6 @@
     display: flex;
     align-items: center;
     justify-content: start;
+    gap: 2%;
     margin-top: 30px;
 }

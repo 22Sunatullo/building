@@ -1,6 +1,8 @@
 .newsStyle {
-    @apply flex items-center justify-between;
-    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // 
 
     button {
         display: flex;
@@ -32,7 +34,7 @@
 
         color: rgba(255, 255, 255, 0.72);
     }
-    button: active {
+    button::active {
         border:  linear-gradient(112.92deg, rgba(255, 255, 255, 0.36) 10.45%, rgba(255, 255, 255, 0.09) 88.73%);
     }
 }
@@ -46,4 +48,28 @@
 .buttonsNews{
     @apply flex;
     gap: 10px;
+}
+
+
+@media (max-width:1024px) {
+    .whiteLine{
+        display: none;
+    }
+    .newsStyle {
+        flex-direction: column;
+        display: block;
+        margin: 30px 0;
+        button{
+            margin: 20px 0;
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    .newsStyle{
+        h1{
+            font-size: 20px;
+        }
+    }
 }

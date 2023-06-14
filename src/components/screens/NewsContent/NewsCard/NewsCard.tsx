@@ -10,7 +10,7 @@ interface cardType {
 
 export const NewsCard = ({image, title, day}:cardType) => {
   return (
-    <div>
+    <div className={style.bgrT}>
       <Image src={image} width={400} height={280} alt="news" />
       <div className={style.newsSt}>
         <h5>{day}</h5>

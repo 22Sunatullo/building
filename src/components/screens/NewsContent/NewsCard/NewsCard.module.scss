@@ -1,5 +1,6 @@
 .newsSt {
     margin-left: 5px;
+
     h5 {
         font-weight: 400;
         font-size: 15px;
@@ -15,8 +16,8 @@
     }
 
     h4 {
-        width: 350px;
-        height: 56px;
+        // width: 350px;
+        // height: 56px;
 
         /* Heading 6 */
 
@@ -34,5 +35,29 @@
         /* Day/Text & Icons/text-01 (inverse) */
 
         color: #FFFFFF;
+    }
+}
+
+@media (max-width: 480px) {
+    .bgrT {
+        width: auto;
+      
+        img{
+            width: 100%;
+        }
+    }
+    .newsSt{
+        padding: 0 5%;
+        margin-top: -11%;
+        margin-left: -0.2%;
+        background: linear-gradient(112.92deg, rgba(255, 255, 255, 0.36) 10.45%, rgba(255, 255, 255, 0.09) 88.73%);
+        box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.08);
+        backdrop-filter: blur(10px);
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        padding-bottom: 20px;
+        border-radius: 0px 0px 16px 16px;
+        width: 100%;
     }
 }

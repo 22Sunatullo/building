@@ -1,15 +1,14 @@
-.inputConsultation { 
-  form{
+.inputConsultation {
+  form {
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
     gap: 20px
   }
+
   button {
     padding: 8px 20px;
-
-    width: 202px;
-    height: 64px;
-
+    height: 67px;
     /* Background */
 
     background: #073535;
@@ -35,4 +34,12 @@
   background: #FFFFFF;
   border-radius: 12px;
 
+}
+
+@media (max-width:1024px) {
+  .inputConsultation {
+    form {
+      flex-direction: column;
+    }
+  }
 }

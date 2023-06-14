@@ -4,3 +4,10 @@
     min-width: auto;
 }
 
+@media (max-width: 1024px) {
+    .wraperc {
+        margin: 15px auto;
+        max-width: 95%;
+        min-width: auto;
+    }
+}

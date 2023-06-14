@@ -1,0 +1,9 @@
+.AddresArrea {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 28px;
+    margin-top: 40px;
+}
+
+@media (max-width:1024px) {
+}

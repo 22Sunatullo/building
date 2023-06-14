@@ -1,6 +1,6 @@
 import Data from "./DataContact";
 import { ContactCard } from "./contactcard/ContactCard";
-import { LocationD, locationD } from "../location/location";
+import { LocationD, locatonD } from "../location/location";
 
 import style from "./Contacts.module.scss";
 

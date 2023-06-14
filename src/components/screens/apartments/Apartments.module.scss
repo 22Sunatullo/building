@@ -1,9 +1,16 @@
-.apart{
+.apart {
     background-image: url('/assets/background/background3.png');
     width: auto;
-    height: 700px;  
+    height: 700px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 700px;
+    background-size: cover;
     padding: 300px 10px;
+}
+
+@media (max-width: 1024px) {
+    .apart {
+        height: 460px;
+        margin-top: 0;
+    }
 }

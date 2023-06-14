@@ -14,7 +14,7 @@ export const SelectApartments = () => {
         </div>
       </div>
       <div className={style.line}></div>
-      <div className="flex justify-around">
+      <div className={style.containerFlex}>
         <ApartmentCatalog />
         <SelectCatalog />
       </div>

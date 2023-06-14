@@ -1,5 +1,7 @@
 .selectStyle {
-    @apply flex items-center justify-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 40px 0;
 }
 
@@ -40,9 +42,30 @@
     }
 }
 
+.containerFlex{
+    display: flex;
+    justify-content: space-between;
+}
+
 .line{
     width: 100%;
     height: 1px;
     background: #fff;
     margin: 40px auto;
+}
+
+
+@media (max-width: 1024px) {
+    .selectStyle {
+        display: block;
+        flex-direction: column;
+    }
+    .btnCatalog {
+        gap: 20px;
+        width: 45%;
+        margin: 2% 0;
+    }
+    .containerFlex{
+        display: block;
+   }
 }

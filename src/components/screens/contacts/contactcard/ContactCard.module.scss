@@ -4,20 +4,11 @@
     align-items: flex-start;
     padding: 16px;
     gap: 16px;
-    width: auto;
-    height: 90px;
-
     &:last-of-type {
         grid-column: span 2;
     }
-
-    /* Main 2 */
-
     background: #062A2A;
     border-radius: 12px;
-
-    /* Inside auto layout */
-
     flex: none;
     order: 1;
     flex-grow: 1;
@@ -26,14 +17,8 @@
         font-weight: 700;
         font-size: 19px;
         line-height: 32px;
-        /* identical to box height, or 168% */
-
-
-        /* White */
-
         color: #FFFFFF;
     }
-
     a {
         font-weight: 300;
         font-size: 14px;

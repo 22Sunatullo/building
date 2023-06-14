@@ -1,4 +1,6 @@
 .develope{
-    @apply flex items-center justify-around;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
     margin-top: 40px;
 }

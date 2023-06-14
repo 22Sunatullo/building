@@ -1,116 +1,70 @@
 .cardInstall {
-    background: url('/assets/installcard/installcard.svg');
-    /* Auto layout */
-    background-repeat: no-repeat;
-    background-size: 890px 540px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 48px 200px 48px 48px;
-    gap: 10px;
-
-    width: 600px;
-    height: 540px;
-
-    border-radius: 50px;
-
-    /* Inside auto layout */
+  background: url('/assets/installcard/installcard2.svg');
+  /* Auto layout */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 50px;
+  bottom: 30px;
+  border-radius: 50px;
 }
 
 .conteinerBack {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 28px;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 28px;
+  gap: 20px;
 
-    width: 376px;
-    height: 470px;
+  background: #FFFFFF;
+  border-radius: 24px;
 
-    background: #FFFFFF;
-    border-radius: 24px;
+  /* Inside auto layout */
 
-    /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  h2 {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 28px;
+      color: #141515;
+  }
 
-    h2 {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 17px;
-        line-height: 28px;
-        /* identical to box height, or 165% */
+  p {
+      width: 320px;
+      height: 40px;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+      color: #434443;
 
+  }
+  button {
+      width: 320px;
+      height: 56px;
+      margin-top: 15px;
+      /* Background */
 
-        /* Text 1 */
-
-        color: #141515;
-
-    }
-
-    p {
-        width: 320px;
-        height: 40px;
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 20px;
-        color: #434443;
-
-    }
-
-    button {
-        padding: 16px 20px;
-        gap: 1px;
-
-        width: 320px;
-        height: 56px;
-        margin-top: 15px;
-        /* Background */
-
-        background: #073535;
-        border-radius: 12px;
-
-    }
+      background: #073535;
+      border-radius: 12px;
+  }
 }
 .inpt {
-    padding: 8px 20px 0px;
+  padding: 8px 20px 0px;
 
-    width: 320px;
-    height: 66px;
+  width: 320px;
+  height: 66px;
 
-    background: #F5F8F7;
-    border-radius: 12px;
-    /* Inside auto layout */
-    margin-top: 15px;
+  background: #F5F8F7;
+  border-radius: 12px;
+  /* Inside auto layout */
+  margin-top: 15px;
 }
-
-.rc-slider-rail { 
-    position: absolute; 
-    width: 100%; 
-    background-color: #f50c0c !important; 
-    /* height: 100%; */ 
-    border-radius: 6px; 
-  }  
-  .rc-slider-track {
-    position: absolute;
-    height: 100%;
-    border-radius: 6px;
-    background-color: var(--color-red) !important;
-    opacity: 100% !important;
-  }
-  .mka__range-alignment { 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: 
-    flex-start; float: left; 
-    background-color: black; 
-    padding: 10px; 
-  }  
-  .mka__range-text { 
-    display: flex; 
-    gap: 10px; 
-    color: white; 
-  }
