@@ -4,3 +4,9 @@
     grid-gap: 28px;
     margin-top: 40px;
 }
+
+@media (max-width:480px) {
+    .AddresArrea {
+        grid-template-columns: 1fr 1fr;
+    }
+}
