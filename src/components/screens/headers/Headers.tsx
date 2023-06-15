@@ -1,8 +1,10 @@
+"use client"
 import { FC } from "react";
 import Image from "next/image";
 import Buttons from "../buttons/Buttons";
 
 import style from "./Headers.module.scss";
+import Link from "next/link";
 
 export const Headers: FC = () => {
   return (
@@ -18,7 +20,7 @@ export const Headers: FC = () => {
                 <a href="#">Проекты</a>
               </li>
               <li>
-                <a href="#">Квартиры</a>
+                <Link href="/apartments">Квартиры</Link>
               </li>
               <li>
                 <a href="#">Галерея</a>

@@ -8,9 +8,9 @@ const Apartments: FC = () => {
   return (
     <div className={styles.apart}>
       <Wrapper>
-        <nav >
+        <div>
           <ApartmentButton />
-        </nav>
+        </div>
       </Wrapper>
     </div>
   );

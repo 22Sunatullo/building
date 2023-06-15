@@ -6,7 +6,7 @@ export const FormConsultation = ({ btns }: { btns: string }) => {
       <form action="">
         <div className={style.inputdiv}>
           <input
-            type="email"
+            type="name"
             name="floating_email"
             id="floating_email"
             className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0  peer"
@@ -19,7 +19,7 @@ export const FormConsultation = ({ btns }: { btns: string }) => {
         </div>
         <div className={style.inputdiv}>
           <input
-            type="password"
+            type=""
             name="floating_password"
             id="floating_password"
             className="block py-2.5 px-0  text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"

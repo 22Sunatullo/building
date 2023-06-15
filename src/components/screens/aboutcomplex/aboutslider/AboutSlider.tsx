@@ -23,12 +23,26 @@ export default function App() {
         }}
         centeredSlides={true}
         loop={true}
-        slidesPerView={2}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
-          depth: 90,
-          modifier: 6.5,
+          depth: 100,
+          modifier: 1.5,
+        }}
+        breakpoints={{
+          480: {
+            spaceBetween: 28,
+          },
+          769: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+            centeredSlides: false,
+          },
+          1360: {
+            slidesPerView: 2,
+            spaceBetween: 48,
+            centeredSlides: false,
+          }
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="swiper_container"
