@@ -2,7 +2,7 @@
     padding: 28px;
     gap: 24px;
     max-width: 432px;
-    min-height: 256px;
+    // min-height: 256px;
     left: 48px;
     top: 236px;
 
@@ -36,17 +36,13 @@
     }
 
     p {
-        width: 384px;
-        height: 32px;
-        font-family: 'Montserrat';
-        font-style: normal;
         font-weight: 400;
         font-size: 11px;
         line-height: 16px;
         display: flex;
         align-items: center;
         letter-spacing: 0.4px;
-        color: #141515;
+        color: #ffff;
     }
 }
 
@@ -62,10 +58,8 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 0px 24px;
-        gap: 8px;
-        width: 184px;
-        height: 44px;
+        padding: 10px 24px;
+        gap: 10px;
         border: 1px solid #FFFFFF;
         border-radius: 12px;
         flex: none;
@@ -77,5 +71,11 @@
     button:hover {
         background: #073535;
         border: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .btnResident{
+        margin-top: 0;
     }
 }

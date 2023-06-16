@@ -4,7 +4,7 @@ import style from './AllApartment.module.scss';
 export const AllApartment = () => {
   return (
     <div className={style.cardAll}>
-        <div>
+        <div className={style.colorText}>
             <h2>Посмотреть все квартиры</h2>
             <p>Здесь собраны все квартиры застройщика, удобный показ планировок и поиск</p>
         </div>

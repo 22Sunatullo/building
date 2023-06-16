@@ -5,18 +5,14 @@
     margin: 15px auto;
     max-width: 1250px;
     min-width: auto;
-
-
     ul {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-
     ul li {
         margin: 20px;
     }
-
     .end a {
         margin-right: 20px;
     }
@@ -25,7 +21,15 @@
         margin-top: 5px;
     }
 }
-
+.btnOver{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    .between{
+        margin-right: 20px;
+    }
+}
 .fixhead {
     position: fixed;
     z-index: 99;
@@ -34,44 +38,94 @@
     background-color: #073535;
     top: 0;
 }
-
 .wraperFix {
     height: 100px;
 }
+.burger{
+    display: none;
+}
+
 
 @media (max-width: 1024px) {
     .container {
         max-width: 95%;
         min-width: auto;
-
         a {
             font-size: 13px;
             line-height: 20px;
-
             display: flex;
             align-items: center;
             text-align: right;
-
-            /* White */
-
             color: #FFFFFF;
         }
-      
-
         img {
             width: 125px;
             height: 36px;
         }
-
         .end {
             display: flex;
         }
-
         .start {
             margin-top: 5px;
         }
-
     }
 
+}
 
+
+@media (max-width: 890px) {
+    .burger{
+        display: block;
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+        z-index: 10;
+        top: 16px;
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .btnOver{
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        left: -100%;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: aqua;
+        z-index: 10;
+        transition: left 1s;
+       
+    }
+    .active {
+        left: 0;
+    }
+    .container {
+       flex-direction: column;
+       display: block;
+    
+    
+        ul {
+            flex-direction: column;
+            margin-top: 1%;
+            justify-content: center;
+        }
+        ul li{
+            margin-top: 0;
+        }
+       
+        .end{
+            flex-direction: column;
+            gap: 10px;
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+   
 }
