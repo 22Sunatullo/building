@@ -1,5 +1,5 @@
 import { InstallmentPlan } from "@/components/screens/InstallmentPlan/InstallmentPlan";
-import { NewsContent } from "@/components/screens/NewsContent/NewsContent";
+import { NewsForPage } from "@/components/screens/NewsForPage/NewsForPage";
 import { ResidentialComplex } from "@/components/screens/ResidentialComplex/ResidentialComplex";
 import { SelectApartments } from "@/components/screens/SelectApartments/SelectApartments";
 import { AreaAdres } from "@/components/screens/areaaress/AreaAdres";
@@ -19,7 +19,8 @@ export default function News() {
         <Develope/>
         <AreaAdres/>
         <InstallmentPlan/>
-        <NewsContent />
+        <Linecont/>
+        <NewsForPage/>
         <SelectApartments/>
       </Wrapper>
       <Footer />

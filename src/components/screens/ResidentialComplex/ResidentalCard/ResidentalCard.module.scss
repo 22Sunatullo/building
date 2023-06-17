@@ -1,5 +1,5 @@
 .residentalCard {
-    padding: 28px;
+    padding: 24px;
     gap: 24px;
     max-width: 432px;
     // min-height: 256px;
@@ -76,6 +76,8 @@
 
 @media (max-width: 480px) {
     .btnResident{
-        margin-top: 0;
+        button{
+            font-size: 11px;
+        }
     }
 }

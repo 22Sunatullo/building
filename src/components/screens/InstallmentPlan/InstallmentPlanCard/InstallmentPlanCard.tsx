@@ -15,20 +15,20 @@ export const InstallmentPlanCard = () => {
           <div className={style.inpt}>
             <h6>Стоимость квартиры</h6>
             <label>12000 сомони</label>
-            <br />
-            <input type="range" />
+            <br />  
+            <Slider />
           </div>
           <div className={style.inpt}>
             <h6>Стоимость квартиры</h6>
             <label>50%</label>
             <br />
-            <input type="range" />
+            <Slider />
           </div>
           <div className={style.inpt}>
             <h6>Стоимость квартиры</h6>
             <label>36 мес</label>
             <br />
-            <input type="range" />
+            <Slider />
           </div>
           <button>Расчитать</button>
         </form>

@@ -15,20 +15,11 @@
 }
 
 .conteinerBack {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     padding: 28px;
     gap: 20px;
 
     background: #FFFFFF;
     border-radius: 24px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 
     h2 {
         font-family: 'Montserrat';
@@ -56,13 +47,12 @@
     }
 
     button {
-        width: 320px;
-        height: 56px;
         margin-top: 15px;
         /* Background */
-
+        height: 56px;
         background: #073535;
         border-radius: 12px;
+        width: 100%;
 
     }
 }
@@ -70,11 +60,17 @@
 .inpt {
     padding: 8px 20px 0px;
 
-    width: 320px;
-    height: 66px;
+    // width: 320px;
+    // height: 66px;
 
     background: #F5F8F7;
     border-radius: 12px;
     /* Inside auto layout */
     margin-top: 15px;
+}
+
+@media (max-width: 480px) {
+    .cardInstall{
+        background: none;
+    }
 }

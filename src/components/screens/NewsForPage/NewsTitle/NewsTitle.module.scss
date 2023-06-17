@@ -1,0 +1,75 @@
+.newsStyle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // 
+
+    button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 20px;
+        gap: 12px;
+
+        width: 136px;
+        height: 40px;
+
+        background: linear-gradient(112.92deg, rgba(255, 255, 255, 0.32) 10.45%, rgba(255, 255, 255, 0.08) 88.73%);
+        border-radius: 16px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 16px;
+        /* identical to box height, or 145% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.4px;
+
+        /* Day/Text & Icons/text-02 (inverse) */
+
+        color: rgba(255, 255, 255, 0.72);
+    }
+    button::active {
+        border:  linear-gradient(112.92deg, rgba(255, 255, 255, 0.36) 10.45%, rgba(255, 255, 255, 0.09) 88.73%);
+    }
+}
+
+.whiteLine{
+    height: 1px;
+    background: #fff;
+    margin:40px 0; 
+}
+
+.buttonsNews{
+    @apply flex;
+    gap: 10px;
+}
+
+
+@media (max-width:1024px) {
+    .whiteLine{
+        display: none;
+    }
+    .newsStyle {
+        flex-direction: column;
+        display: block;
+        margin: 30px 0;
+        button{
+            margin: 20px 0;
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    .newsStyle{
+        h1{
+            font-size: 20px;
+        }
+    }
+}

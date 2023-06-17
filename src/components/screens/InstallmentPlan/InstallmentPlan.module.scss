@@ -3,3 +3,22 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
+
+.slider{
+    display: none;
+}
+
+
+@media (max-width: 480px) {
+    .slider{
+        display: block;
+    }
+    .instalPosition{
+        display: none;
+    }
+    .title{
+        h1{
+            font-size: 20px;
+        }
+    }
+}

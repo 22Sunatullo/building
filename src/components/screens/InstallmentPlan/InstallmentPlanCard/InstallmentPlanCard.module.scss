@@ -14,9 +14,6 @@
 }
 
 .conteinerBack {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   padding: 28px;
   gap: 20px;
 
@@ -48,7 +45,7 @@
 
   }
   button {
-      width: 320px;
+      width: 100%;
       height: 56px;
       margin-top: 15px;
       /* Background */
@@ -60,11 +57,18 @@
 .inpt {
   padding: 8px 20px 0px;
 
-  width: 320px;
-  height: 66px;
+  // width: 320px;
+  //  min-height: 66px;
 
   background: #F5F8F7;
   border-radius: 12px;
   /* Inside auto layout */
   margin-top: 15px;
+}
+
+
+@media (max-width: 480px) {
+  .cardInstall{
+    background: none;
+  }
 }
