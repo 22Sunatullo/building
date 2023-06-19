@@ -4,73 +4,86 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     gap: 10px;
-    padding: 50px;
-    bottom: 30px;
     border-radius: 50px;
-    /* Inside auto layout */
-}
-
-.conteinerBack {
+    padding: 50px;
+    width: 100%;
+  }
+  
+  .conteinerBack {
     padding: 28px;
-    gap: 20px;
-
+    top: 8%;
+    left: 10%;
+    max-width: 376px;
     background: #FFFFFF;
     border-radius: 24px;
-
+  
     h2 {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 17px;
-        line-height: 28px;
-        /* identical to box height, or 165% */
-
-
-        /* Text 1 */
-
-        color: #141515;
-
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 28px;
+      color: #141515;
     }
-
+  
     p {
-        width: 320px;
-        height: 40px;
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 20px;
-        color: #434443;
-
+      width: 320px;
+      height: 40px;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+      color: #434443;
+  
     }
-
+  
     button {
-        margin-top: 15px;
-        /* Background */
-        height: 56px;
-        background: #073535;
-        border-radius: 12px;
-        width: 100%;
-
+      width: 100%;
+      /* Background */
+     height: 50px;
+  
+      background: #073535;
+      border-radius: 12px;
     }
-}
-
-.inpt {
-    padding: 8px 20px 0px;
-
-    // width: 320px;
-    // height: 66px;
-
+  }
+  
+  .inpt {
+    padding: 8px 10px 0px;
     background: #F5F8F7;
     border-radius: 12px;
-    /* Inside auto layout */
-    margin-top: 15px;
-}
-
-@media (max-width: 480px) {
-    .cardInstall{
-        background: none;
+    margin: 3% 0;
+  
+    h6 {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 16px;
+      letter-spacing: 0.4px;
+      color: #9A9DA3;
     }
-}
+  
+    span {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 20px;
+      color: #434443;
+  
+    }
+  
+  }
+  
+  
+  @media (max-width: 480px) {
+    .cardInstall {
+      background: none;
+      padding: 0;
+    }
+    .conteinerBack{
+      top: 0;
+      left: 0;
+      width: 95%;
+    }
+  }

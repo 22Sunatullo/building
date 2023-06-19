@@ -3,12 +3,9 @@
     grid-template-columns: 1fr auto;
     gap: 20px;
 }
-
 .mobileSlider{
     display: none;
 }
-
-
 @media (max-width:480px) {
     .mobileSlider{
         display: block;

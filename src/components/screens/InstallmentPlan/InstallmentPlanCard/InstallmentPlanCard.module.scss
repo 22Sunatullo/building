@@ -1,20 +1,17 @@
 .cardInstall {
   background: url('/assets/installcard/installcard2.svg');
-  /* Auto layout */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   gap: 10px;
   border-radius: 50px;
-  position: relative;
+  width: 100%;
+  padding: 50px;
 }
 
 .conteinerBack {
   padding: 28px;
-  position: absolute;
-  top: 8%;
-  left: 10%;
-
+  max-width: 376px;
   background: #FFFFFF;
   border-radius: 24px;
 
@@ -79,6 +76,7 @@
 @media (max-width: 480px) {
   .cardInstall {
     background: none;
+    padding: 0;
   }
   .conteinerBack{
     top: 0;

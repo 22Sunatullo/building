@@ -2,12 +2,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-}
-
+}   
 .slider{
     display: none;
 }
 
+.title{
+    margin: 3% 0;
+    h1{
+        margin: 2% 0;
+    }
+}
 
 @media (max-width: 480px) {
     .slider{

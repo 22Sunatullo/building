@@ -1,24 +1,22 @@
 import Image from "next/image";
 import style from './AdresCard.module.scss';
 
-import logo3 from "public/assets/logo/logo 3.png";
-
 
 type TypeCard = {
   title:string, 
-  Adrestext:string, 
-  id:number
+  adrestext:string, 
+  image: string
 }
 
-const AdresCard = ({title,Adrestext, id }:TypeCard ) => {
+const AdresCard = ({title,adrestext, image }:TypeCard ) => {
   return (
-    <div className={style.addcont} key={id}>
+    <div className={style.addcont}>
       <div className={style.imgCont}>
-        <Image src={logo3} alt="dd" />
+        <Image src={image} alt="dd" width={40} height={40} />
       </div>
       <div className="titleadres">
         <h3>{title}</h3>
-        <h6>{Adrestext}</h6>
+        <h6>{adrestext}</h6>
       </div>
     </div>
   );

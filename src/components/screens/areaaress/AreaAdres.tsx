@@ -6,7 +6,7 @@ export const AreaAdres = () => {
     <div className="container">
       <div className={style.AddresArrea}>
         {Data.map((el) => {
-          return <AdresCard title={el.title} Adrestext={el.text} id={el.id} />;
+          return <AdresCard key={el.id} {...el} />;
         })}
       </div>
     </div>

@@ -1,5 +1,6 @@
 'use client'
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
@@ -14,6 +15,10 @@ export const MobileSlider = () => {
         <Swiper
         spaceBetween={20}
         className={style.slider}
+        pagination={{
+          dynamicBullets: true
+        }}
+        modules={[Pagination]}
         >
             <SwiperSlide>
                 <ResidentalCard/>
@@ -21,6 +26,7 @@ export const MobileSlider = () => {
             <SwiperSlide>
                 <AllApartment/>
             </SwiperSlide>
+            <div className={style.pagination}></div>
         </Swiper>
     </div>
   )

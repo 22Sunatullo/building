@@ -17,10 +17,12 @@ export const SelectCatalog = () => {
   return (
     <>
       <div className={style.Catalog}>
-        {SelectData.map((el) => (
+        {
+        SelectData.map((el) => (
           <SelectCard key={el.id} {...el} />
         ))}
       </div>
+
       <div className={style.mobile}>
         <button id={prevId} className={style.prevbtn}>
           <Image
@@ -42,6 +44,7 @@ export const SelectCatalog = () => {
           }}
           modules={[Pagination, Navigation]}
         >
+
           {SelectData.map((el) => {
             return (
               <SwiperSlide>
