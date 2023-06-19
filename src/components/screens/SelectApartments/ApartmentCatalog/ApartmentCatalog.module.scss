@@ -3,7 +3,7 @@
     box-sizing: border-box;
     /* Auto layout */
     padding: 8px 20px;
-    max-width: 384px;   
+    width: 100%;   
     max-height: 64px;
     background: linear-gradient(112.92deg, rgba(255, 255, 255, 0.36) 10.45%, rgba(255, 255, 255, 0.09) 88.73%);
     box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.08);
@@ -39,9 +39,8 @@
     }
 }
 
-.containers {
-    // max-width: 334px;
-    // margin: 29px auto;
+.formWidth{
+    width: 100%;
 }
 
 .btnGold {
@@ -49,25 +48,13 @@
 
     button {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
         padding: 8px 20px;
         gap: 1px;
-
-        max-width: 100%;
-
-        /* Gold */
-
+        width: 100%;
         background: linear-gradient(151.21deg, #A58038 9.17%, #FFCB7B 56.12%, #A58038 103.08%);
         border-radius: 12px;
-
-        /* Inside auto layout */
-
-        flex: none;
-        order: 3;
-        align-self: stretch;
-        flex-grow: 0;
         gap: 10px;
     }
 }
@@ -76,37 +63,17 @@
     margin-top: 20px;
     button {
         box-sizing: border-box;
-
-        /* Auto layout */
-
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
         padding: 8px 20px;
-
-        // width: 384px;
-        // height: 64px;
-
-        /* White */
-
+        width: 100%;
         border: 1px solid #FFFFFF;
         border-radius: 12px;
-
-        /* Inside auto layout */
-
-        flex: none;
-        order: 4;
-        align-self: stretch;
-        flex-grow: 0;
     }
 }
 
 @media (max-width:1024px) {
     .formStyle{
         display: flex;
-        gap: 20px
-        ;
+        gap: 20px ;
     }
 }
 
@@ -118,6 +85,9 @@
         gap: 20px;
     }
     .btnGold{
-        display: none   ;
+        display: none;
+    }
+    .btn{
+        display: none;
     }
 }

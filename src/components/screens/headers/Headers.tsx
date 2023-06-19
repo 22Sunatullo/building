@@ -19,7 +19,7 @@ export const Headers = () => {
               alt="dd"
             />
           <div className={
-              nav ? [style.btnOver, style.active].join() : [style.btnOver]
+              nav ? [style.btnOver, style.active].join('') : [style.btnOver]
             }
           >
             <nav className={style.between}>

@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export const ApartmentCatalog = () => {
   return (
-    <div>
+    <div className={style.formWidth}>
       <form action="" className={style.formStyle}>
         <div className={style.catalog}>
           <h6>Количество комнат</h6>

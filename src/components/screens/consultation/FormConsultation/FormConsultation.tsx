@@ -1,6 +1,7 @@
 import style from "./FormConsultation .module.scss";
 
 export const FormConsultation = ({ btns }: { btns: string }) => {
+
   return (
     <div className={style.inputConsultation}>
       <form action="">

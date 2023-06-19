@@ -12,7 +12,6 @@ export default function News() {
         <PagesActive/>
         <NewsContent/>
       </Wrapper>
-      <Footer/>
     </div>
   );
 }

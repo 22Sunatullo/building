@@ -6,9 +6,7 @@ import Apartments from "@/components/screens/apartments/Apartments";
 import { AreaAdres } from "@/components/screens/areaaress/AreaAdres";
 import { Contacts } from "@/components/screens/contacts/Contacts";
 import { Develope } from "@/components/screens/develope/Develope";
-import Footer from "@/components/screens/footer/Footer";
 import Gelery from "@/components/screens/gelery/Gelery";
-import { Headers } from "@/components/screens/headers/Headers";
 import Linecont from "@/components/screens/linecont/Linecont";
 import { PerfectApartment } from "@/components/screens/perfectApartment/PerfectApartment";
 import { Wrapper } from "@/components/screens/wraper/Wraper";
@@ -17,7 +15,6 @@ import Apartment from "@/components/screens/Apartment/Apartment";
 export default function Home() {
   return (
     <div>
-      <Headers />
       <Apartments />
       <Wrapper>
         <Aboutcomplex />
@@ -37,7 +34,6 @@ export default function Home() {
         <Contacts/>
         <Consultation btns="Отправить заявку" title2='Оставьте заявку'/>
       </Wrapper>
-      <Footer />  
     </div>
   );
 }

@@ -13,7 +13,7 @@ export const SelectApartments = () => {
           <button>ЖК проект №1</button>
         </div>
       </div>
-      <div className={style.line}></div>
+      {/* <div className={style.line}></div> */}
       <div className={style.containerFlex}>
         <ApartmentCatalog />
         <SelectCatalog />
