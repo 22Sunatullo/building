@@ -1,5 +1,5 @@
 import { InstallmentPlan } from "@/components/screens/InstallmentPlan/InstallmentPlan";
-import { NewsContent } from "@/components/screens/NewsContent/NewsContent";
+import { NewsForPage } from "@/components/screens/NewsForPage/NewsForPage";
 import PagesActive from "@/components/screens/PagesActive/PagesActive";
 import { SelectApartments } from "@/components/screens/SelectApartments/SelectApartments";
 import Consultation from "@/components/screens/consultation/Consultation";
@@ -15,7 +15,7 @@ export default function News() {
         <Consultation title="Индивидуальная консультация" text="Наши специалисты подберут для Вас самые лучшие условия приобретения квартиры    всего за 10 минут" btns="Отправить"/>
         <InstallmentPlan/>
         <Linecont/>
-        <NewsContent/>  
+       <NewsForPage/>
       </Wrapper>
     </div>
   );

@@ -15,10 +15,30 @@
   }
 }
 
+.mobileCatalog{
+  display: none;
+  background: linear-gradient(112.92deg, rgba(255, 255, 255, 0.36) 10.45%, rgba(255, 255, 255, 0.09) 88.73%);
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10%);
+  border-radius: 24px;  
+}
+
 @media (max-width:1024px) {
   .btnCatalog {
     ul {
       grid-template-columns: 1fr 1fr 1fr;
     }
+  }
+}
+
+@media (max-width: 480px) {
+  .mobileCatalog{
+    display: block;
+    width: 95%;
+    padding: 5%;
+    margin-top: 5%;
+  }
+  .btnCatalog {
+    display: none;
   }
 }

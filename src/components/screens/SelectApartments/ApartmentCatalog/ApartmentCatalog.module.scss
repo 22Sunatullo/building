@@ -3,7 +3,7 @@
     box-sizing: border-box;
     /* Auto layout */
     padding: 8px 20px;
-    width: 100%;   
+    width: 100%;
     max-height: 64px;
     background: linear-gradient(112.92deg, rgba(255, 255, 255, 0.36) 10.45%, rgba(255, 255, 255, 0.09) 88.73%);
     box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.08);
@@ -39,8 +39,27 @@
     }
 }
 
-.formWidth{
+.formWidth {
     width: 100%;
+}
+
+.styleB {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    position: relative;
+    h3 {
+        font-weight: 400;
+        font-size: 15px;
+    }
+    span{
+        font-weight: 700; 
+    }
+}
+
+.endItem{
+    position: absolute;
+    left: 60%;
 }
 
 .btnGold {
@@ -61,6 +80,7 @@
 
 .btn {
     margin-top: 20px;
+
     button {
         box-sizing: border-box;
         padding: 8px 20px;
@@ -71,23 +91,25 @@
 }
 
 @media (max-width:1024px) {
-    .formStyle{
+    .formStyle {
         display: flex;
-        gap: 20px ;
+        gap: 20px;
     }
 }
 
 
 @media (max-width:480px) {
-    .formStyle{
+    .formStyle {
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
-    .btnGold{
+
+    .btnGold {
         display: none;
     }
-    .btn{
+
+    .btn {
         display: none;
     }
 }
