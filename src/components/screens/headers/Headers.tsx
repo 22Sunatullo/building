@@ -12,16 +12,15 @@ export const Headers = () => {
     <header className={style.wraperFix}>
       <nav className={style.fixhead}>
         <nav className={style.container}>
-            <Image
-              src={"/assets/logo/logo2.png"}
-              width={150}
-              height={150}
-              alt="dd"
-            />
+          <Image
+            src={"/assets/logo/logo2.png"}
+            width={150}
+            height={150}
+            alt="dd"
+          />
           <div className={
-              nav ? [style.btnOver, style.active].join('') : [style.btnOver]
-            }
-          >
+            nav ? [style.btnOver, style.active].join('') : [style.btnOver, ''].join('')
+          }>
             <nav className={style.between}>
               <ul>
                 <li>
@@ -49,11 +48,11 @@ export const Headers = () => {
           <nav onClick={() => setNav(!nav)} className={style.burger}>
             {nav ? (
               <button>
-                <Image src="/assets/logo/menu.png" width={0} height={0} alt="menu"/>
+                <Image src="/assets/logo/menu.png" width={0} height={0} alt="menu" />
               </button>
             ) : (
               <button>
-                <Image src="/assets/logo/menu.png" width={0} height={0} alt="22"/>
+                <Image src="/assets/logo/menu.png" width={0} height={0} alt="22" />
               </button>
             )}
           </nav>

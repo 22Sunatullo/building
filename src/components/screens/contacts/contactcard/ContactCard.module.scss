@@ -27,3 +27,14 @@
     }
 
 }
+
+@media (max-width: 480px) {
+    .conts{
+        h6{
+            font-size: 13px;
+        }
+        a{
+            font-size: 11px;
+        }
+    } 
+}
