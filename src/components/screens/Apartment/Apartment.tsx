@@ -31,7 +31,7 @@ function Apartment() {
         </div>
         <div className={style.mobileBtn}>
           <Swiper
-          slidesPerView={2}
+          slidesPerView={3}
           >
             {
               ApartmentCategories.map(el => <SwiperSlide><button onClick={() => { setApartCategoriesId(el.id) }} className="btnApr" key={el.id}>{el.name}</button>

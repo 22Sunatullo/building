@@ -4,20 +4,54 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 700px;
-    
+}
 
+.mobileGalery {
+    display: none;
+    position: relative;
+}
+.prev {
+    position: absolute;
+    left: -1%;
+    top: 154px;
+    z-index: 2;
+}
+.next{
+    position: absolute;
+    right: -1%;
+    top: 154px;
+    z-index: 1; 
 }
 
 .glrcont {
     display: grid;
     grid-template-columns: 1fr 1fr;
     // padding: 450px 40px;
-}   
+}
 
 .gelery {
     position: relative;
+
     h1 {
         margin-top: 50px;
         margin-bottom: 48px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gelery {
+        margin-top: 4%;
+
+        h1 {
+            display: none;
+        }
+    }
+
+    .gelerycont {
+        display: none;
+    }
+
+    .mobileGalery {
+        display: block;
     }
 }

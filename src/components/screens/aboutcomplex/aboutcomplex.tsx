@@ -6,12 +6,10 @@ import styles from "./About.module.scss";
 
 const Aboutcomplex: FC = () => {
   return (
-    <div>
       <div className={styles.complex}>
         <Aboutcoment />
         <AboutSlider />
       </div>
-    </div>
   );
 };
 

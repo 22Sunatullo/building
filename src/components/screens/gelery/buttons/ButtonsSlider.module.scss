@@ -13,3 +13,10 @@
         margin-left: 40px;
     }
 }
+
+
+@media (max-width: 480px) {
+    .btnGelery{
+        display: none;
+    }
+}
