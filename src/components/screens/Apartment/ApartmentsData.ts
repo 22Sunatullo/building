@@ -172,7 +172,7 @@ export const ApartmentCategories: IApartmentCategory[] = [
       name:'+4',
       apartments: [
         {
-          id: 8,
+          id: 1,
           title: "5-комнатная квартира",
           img: "assets/apartment/image.svg",
           square: "4850 м2",

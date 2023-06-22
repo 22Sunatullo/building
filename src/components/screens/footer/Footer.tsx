@@ -1,7 +1,5 @@
 import Image from "next/image";
 import style from "./Footer.module.scss";
-
-import logoitem from "public/assets/logo/logo 3.png";
 import FooterModal from "../footermodal/FooterModal";
 import Linecont from "../linecont/Linecont";
 import { Wrapper } from "../wraper/Wraper";
@@ -36,19 +34,19 @@ const Footer = () => {
                   <ul>
                     <li>
                       <a href="">
-                        <Image src={logoitem} width={15} alt="logo3" />
+                        <Image src="/assets/logo/instagramgold.png" width={15} height={20} alt="logo3" />
                         Instagram
                       </a>
                     </li>
                     <li>
                       <a href="">
-                        <Image src={logoitem} width={15} alt="logo3" />
+                        <Image src="/assets/logo/whatsappgold.png"width={15} height={20} alt="logo3" />
                         Whatsapp
                       </a>
                     </li>
                     <li>
                       <a href="">
-                        <Image src={logoitem} width={15} alt="logo3" />
+                        <Image src="/assets/logo/facegold.png" width={15} height={20} alt="logo3" />
                         Facebook
                       </a>
                     </li>

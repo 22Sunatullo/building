@@ -6,7 +6,7 @@ import style from "./Contacts.module.scss";
 
 export const Contacts = () => {
   const contactCard = Data.map((el) => {
-    return <ContactCard {...el} />;
+    return <ContactCard key={el.id} {...el} />;
   });
 
   return (

@@ -29,7 +29,7 @@ export const ApartmentList: FC<ListType> = ({ apartments }) => {
         >
           {
            
-             apartments.map(el =><SwiperSlide> <ApartmentCard key={el.id} {...el} /> </SwiperSlide>)
+             apartments.map(el =><SwiperSlide key={el.id}> <ApartmentCard {...el} /> </SwiperSlide>)
           }
         </Swiper>
       </div>

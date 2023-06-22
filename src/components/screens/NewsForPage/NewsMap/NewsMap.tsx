@@ -21,8 +21,8 @@ export const NewsMap = () => {
       >
         {
           NewsInfo.map(el =>{
-            return <SwiperSlide>
-               <NewsCard key={el.id} {...el}/>
+            return <SwiperSlide key={el.id}>
+               <NewsCard  {...el}/>
             </SwiperSlide>
           } )
         }

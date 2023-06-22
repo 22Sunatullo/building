@@ -34,7 +34,7 @@ function Apartment() {
           slidesPerView={3}
           >
             {
-              ApartmentCategories.map(el => <SwiperSlide><button onClick={() => { setApartCategoriesId(el.id) }} className="btnApr" key={el.id}>{el.name}</button>
+              ApartmentCategories.map(el => <SwiperSlide key={el.id}><button onClick={() => { setApartCategoriesId(el.id) }} className="btnApr">{el.name}</button>
               </SwiperSlide>)
             }
           </Swiper>

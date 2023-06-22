@@ -47,8 +47,8 @@ export const SelectCatalog = () => {
 
           {SelectData.map((el) => {
             return (
-              <SwiperSlide>
-                <SelectCard key={el.id} {...el} />
+              <SwiperSlide key={el.id} >
+                <SelectCard {...el} />
               </SwiperSlide>
             );
           })}

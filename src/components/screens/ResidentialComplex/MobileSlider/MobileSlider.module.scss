@@ -1,8 +1,20 @@
-.slider{
-    display: flex;
-    align-items: stretch;
-}
+.swiper-pagination {
+    margin-top: 10px; // пример отступа сверху
+    text-align: center; // выравнивание по центру
 
-.pagination{
-    margin-top: 10%;
+    .swiper-pagination-bullet {
+        background-color: #ddd; // измените этот цвет на желаемый
+        opacity: 1;
+        width: 8px;
+        height: 8px;
+        margin: 0 5px; // отступ между элементами пагинации
+
+        &:hover {
+            background-color: #999; // измените этот цвет на желаемый
+        }
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #333; // измените этот цвет на желаемый
+    }
 }

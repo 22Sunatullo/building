@@ -16,7 +16,8 @@ export const MobileSlider = () => {
         spaceBetween={20}
         className={style.slider}
         pagination={{
-          dynamicBullets: true
+          dynamicBullets: true,
+          el: '.swiper-pagination' // добавьте этот параметр
         }}
         modules={[Pagination]}
         >
@@ -26,7 +27,7 @@ export const MobileSlider = () => {
             <SwiperSlide>
                 <AllApartment/>
             </SwiperSlide>
-            <div className={style.pagination}></div>
+            <div className={style.pagination + ' swiper-pagination'}></div>
         </Swiper>
     </div>
   )

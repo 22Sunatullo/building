@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -45,35 +46,35 @@ export default function App() {
           }
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="swiper_container"
+        className={style.imgAuto}
       >
         <SwiperSlide>
-          <img src="/assets/slider/Rectangle 8.png" />
+          <Image width={200} height={300} alt="smm" src="/assets/slider/Rectangle 8.png" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/assets/slider/Rectangle 8.png" />
+          <Image width={200} height={300} alt="smm" src="/assets/slider/Rectangle 8.png" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/assets/slider/Rectangle 8.png" />
+          <Image width={200} height={300} alt="smm" src="/assets/slider/Rectangle 8.png" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/assets/slider/Rectangle 8.png" />
+          <Image width={200} height={300} alt="smm" src="/assets/slider/Rectangle 8.png" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/assets/slider/Rectangle 8.png" />
+          <Image width={200} height={300} alt="smm" src="/assets/slider/Rectangle 8.png" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/assets/slider/Rectangle 8.png" />
+          <Image width={200} height={300} alt="smm" src="/assets/slider/Rectangle 8.png" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/assets/slider/Rectangle 8.png" />
+          <Image width={200} height={300} alt="smm" src="/assets/slider/Rectangle 8.png" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/assets/slider/Rectangle 8.png" />
+          <Image width={200} height={300} alt="smm" src="/assets/slider/Rectangle 8.png" />
         </SwiperSlide>
         <div className={style.sliderController}>
-          <button id={prevId}><img src="/assets/logo/logo5.png" alt="" /></button>
-          <button  id={nextId}><img src="/assets/logo/logo6.png" alt="" /></button>
+          <button id={prevId}><Image width={200} height={300} alt="smm" src="/assets/logo/logo5.png"/></button>
+          <button  id={nextId}><Image width={200} height={300} alt="smm" src="/assets/logo/logo6.png" /></button>
         </div>
       </Swiper>
     </>
