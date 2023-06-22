@@ -3,7 +3,6 @@ import { NewsForPage } from "@/components/screens/NewsForPage/NewsForPage";
 import { ResidentialComplex } from "@/components/screens/ResidentialComplex/ResidentialComplex";
 import { SelectApartments } from "@/components/screens/SelectApartments/SelectApartments";
 import { SoctialMedium } from "@/components/screens/SoctialMedium/SoctialMedium";
-import { AreaAdres } from "@/components/screens/areaaress/AreaAdres";
 import Consultation from "@/components/screens/consultation/Consultation";
 import { Develope } from "@/components/screens/develope/Develope";
 import Linecont from "@/components/screens/linecont/Linecont";

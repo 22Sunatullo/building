@@ -1,26 +1,18 @@
-.cardG {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
-    margin: 40px 0;
-}
-
-.mobile {
-    display: none;
+.Traid {
     position: relative;
 }
 
-.nextbtn {
+.btnLeft {
     position: absolute;
-    right: -8px;
-    top: 192px;
+    right: -1%;
+    top: 49%;
     z-index: 2;
 }
 
-.prevbtn {
+.btnRight {
     position: absolute;
-    left: -8px;
-    top: 192px;
+    left: -1%;
+    top: 49%;
     z-index: 2;
 }
 
@@ -39,16 +31,4 @@
 .swiperPagination {
     display: flex;
     justify-content: center;
-    margin-top: 3%;
-}
-
-
-@media (max-width: 480px) {
-    .cardG {
-        display: none;
-    }
-
-    .mobile {
-        display: block;
-    }
 }

@@ -22,3 +22,16 @@
     flex-grow: 0;
   }
 }
+
+@media (max-width: 1024px) {
+  .titleConsultation{
+    width: 40%;
+    h2{
+      width: 70%;
+    }
+    P{
+      width: 75%;
+    }
+  }
+ 
+}

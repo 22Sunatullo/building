@@ -15,6 +15,14 @@
     display: none;
 }
 
+@media (max-width:1024px) {
+    .container{
+        display: flex;
+        justify-content: normal;
+        align-items: center;
+    }
+}
+
 @media (max-width: 480px) {
     .container {
         display: none;
@@ -26,7 +34,7 @@
         box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.08);
         backdrop-filter: blur(10px);
         border-radius: 24px;
-        margin: 3% 0;
+        margin: 13% 0;
         padding: 5% 10%;
 
         h1 {

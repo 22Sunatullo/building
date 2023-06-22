@@ -4,31 +4,36 @@ import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+
 // import required modules
-import style from './MobileSlider.module.scss'
 import { AllApartment } from "../AllApartment/AllApartment";
 import { ResidentalCard } from "../ResidentalCard/ResidentalCard";
+
+import style from "./MobileSlider.module.scss";
 
 export const MobileSlider = () => {
   return (
     <div>
-        <Swiper
+      <Swiper
         spaceBetween={20}
         className={style.slider}
-        pagination={{
-          dynamicBullets: true,
-          el: '.swiper-pagination' // добавьте этот параметр
+        pagination= {{
+          clickable: true,
+          el: '#pagination-container',
+          bulletClass: style.bullet,
+          bulletActiveClass: style.bulletActive
         }}
         modules={[Pagination]}
-        >
-            <SwiperSlide>
-                <ResidentalCard/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <AllApartment/>
-            </SwiperSlide>
-            <div className={style.pagination + ' swiper-pagination'}></div>
-        </Swiper>
+      >
+        <SwiperSlide>
+          <ResidentalCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <AllApartment />
+        </SwiperSlide>
+      </Swiper>
+      
+      <div id="pagination-container" className={style.swiperPagination}></div>
     </div>
-  )
-}
+  );
+};

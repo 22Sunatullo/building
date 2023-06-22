@@ -1,33 +1,70 @@
 'use client'
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import { EffectCoverflow, Pagination, Navigation } from "swiper";
+
+import Image from "next/image";
 import { NewsCard } from "../NewsCard/NewsCard";
 import NewsInfo from "../NewsInfo";
 import style from './NewsMap.module.scss';
-import "swiper/css/pagination";
 
 export const NewsMap = () => {
+  let prevId = "instagram-nav-prev";
+  let nextId = "instagram-nav-next";
+
   return (
     <>
-    <div className={style.cardG}>
+      <div className={style.cardG}>
         {
-          NewsInfo.map(el =>{
-            return <NewsCard key={el.id} {...el}/>
+          NewsInfo.map(el => {
+            return <NewsCard key={el.id} {...el} />
           })
         }
-    </div>
-    <div className={style.mobile}>
-      <Swiper
-      spaceBetween={30}
-      >
-        {
-          NewsInfo.map(el =>{
-            return <SwiperSlide key={el.id}>
-               <NewsCard  {...el}/>
-            </SwiperSlide>
-          } )
-        }
-      </Swiper>
-    </div>
+      </div>
+      <div className={style.mobile}>
+        <button id={nextId} className={style.nextbtn}>
+          <Image
+            src="/assets/logo/logo7.png"
+            width={20}
+            height={20}
+            alt="new"
+          />
+        </button>
+        <button id={prevId} className={style.prevbtn}>
+          <Image
+            src="/assets/logo/logo8.png"
+            width={20}
+            height={20}
+            alt="new"
+          />
+        </button>
+        <Swiper
+          spaceBetween={30}
+          pagination={{
+            dynamicBullets: true,
+            el: '#pagination'
+          }}
+          navigation={{
+            prevEl: `#${prevId}`,
+            nextEl: `#${nextId}`,
+            enabled: true,
+          }}
+
+          modules={[Pagination, Navigation]}
+          
+        >
+          {
+            NewsInfo.map(el => {
+              return <SwiperSlide key={el.id}>
+                <NewsCard  {...el} />
+              </SwiperSlide>
+            })
+          }
+        </Swiper>
+        <div id="pagination" className={style.swiperPagination}></div>
+      </div>
     </>
   )
 }

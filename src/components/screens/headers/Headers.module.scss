@@ -51,7 +51,7 @@
         max-width: 95%;
         min-width: auto;
         a {
-            font-size: 13px;
+            font-size: 11px;
             line-height: 20px;
             display: flex;
             align-items: center;
@@ -73,7 +73,7 @@
 }
 
 
-@media (max-width: 890px) {
+@media (max-width: 970px) {
     .burger{
         display: block;
         position: absolute;
@@ -124,6 +124,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                
             }
         }
     }

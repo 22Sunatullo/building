@@ -73,7 +73,7 @@ export default function App() {
           <Image width={200} height={300} alt="smm" src="/assets/slider/Rectangle 8.png" />
         </SwiperSlide>
         <div className={style.sliderController}>
-          <button id={prevId}><Image width={200} height={300} alt="smm" src="/assets/logo/logo5.png"/></button>
+          <button id={prevId}><Image width={200} height={300} alt="smm" src="/assets/logo/logo5.png" /></button>
           <button  id={nextId}><Image width={200} height={300} alt="smm" src="/assets/logo/logo6.png" /></button>
         </div>
       </Swiper>

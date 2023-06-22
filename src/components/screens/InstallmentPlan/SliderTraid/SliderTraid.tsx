@@ -5,29 +5,55 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { AutoTraid } from "../AutoTraid/AutoTraid";
 import { InstallmentPlanCard } from "../InstallmentPlanCard/InstallmentPlanCard";
+import style from './SliderTraid.module.scss'
+import { EffectCoverflow, Pagination, Navigation } from "swiper";
+import Image from "next/image";
 
 export default function SliderTraid() {
   const slideStyles = {
     backgroundColor: 'none',
     display: 'flex',
-    margin: '2em 0',
+    margin: '2em auto',
     alignItems: 'stretch'
   };
 
+  let prevId = 'instagram-nav-prev'
+  let nextId = 'instagram-nav-next'
+
   return (
+
     <>
-      <div>
-        <Swiper 
-         style={slideStyles}
-         spaceBetween={20}
-        >
-          <SwiperSlide>
-            <InstallmentPlanCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <AutoTraid />
-          </SwiperSlide>
-        </Swiper>
+      <div className={style.Traid}>
+        <div>
+          <button id={nextId} className={style.btnLeft}><Image src='/assets/logo/buttonLeft.png' width={30} height={30} alt="button" /></button>
+
+          <Swiper
+            style={slideStyles}
+            pagination= {{
+              clickable: true,
+              el: '#pagination-container',
+              bulletClass: style.bullet,
+              bulletActiveClass: style.bulletActive
+            }}
+            spaceBetween={20}
+            navigation={{
+              prevEl: `#${prevId}`,
+              nextEl: `#${nextId}`,
+              enabled: true,
+            }}
+            modules={[EffectCoverflow, Pagination, Navigation]}
+          >
+            <SwiperSlide>
+              <InstallmentPlanCard />
+            </SwiperSlide>
+            <SwiperSlide>
+              <AutoTraid />
+            </SwiperSlide>
+          </Swiper>
+          <div id="pagination-container" className={style.swiperPagination}></div>
+
+          <button id={prevId} className={style.btnRight}><Image src='/assets/logo/buttonRight.png' width={30} height={30} alt="button" /></button>
+        </div>
       </div>
     </>
   );
