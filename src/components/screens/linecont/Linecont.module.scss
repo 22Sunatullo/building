@@ -4,3 +4,9 @@
     height: 1px;
     margin-top: 50px;
 }
+
+@media (max-width: 480px) {
+    .linecont{
+        margin-top:  0;  
+    }
+}

@@ -18,9 +18,9 @@ export const SelectCatalog = () => {
     <>
       <div className={style.Catalog}>
         {
-        SelectData.map((el) => (
-          <SelectCard key={el.id} {...el} />
-        ))}
+          SelectData.map((el) => (
+            <SelectCard key={el.id} {...el} />
+          ))}
       </div>
 
       <div className={style.mobile}>
@@ -34,8 +34,11 @@ export const SelectCatalog = () => {
         </button>
         <Swiper
           spaceBetween={20}
-          pagination={{
-            dynamicBullets: true,
+          pagination= {{
+            clickable: true,
+            el: '#pagination-container',
+            bulletClass: style.bullet,
+            bulletActiveClass: style.bulletActive
           }}
           navigation={{
             prevEl: `#${prevId}`,
@@ -52,8 +55,8 @@ export const SelectCatalog = () => {
               </SwiperSlide>
             );
           })}
-          <div className={style.pagination}></div>
         </Swiper>
+
         <button id={nextId} className={style.nextbtn}>
           <Image
             src="/assets/logo/logo7.png"
@@ -62,7 +65,7 @@ export const SelectCatalog = () => {
             alt="new"
           />
         </button>
-
+        <div id="pagination-container" className={style.pagination}></div>
         <div className={style.btnGold}>
           <button>
             Все квартиры

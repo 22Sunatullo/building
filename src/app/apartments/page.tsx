@@ -13,6 +13,7 @@ export default function News() {
         <PagesActive />
         <SelectApartments/>
         <Consultation title="Индивидуальная консультация" text="Наши специалисты подберут для Вас самые лучшие условия приобретения квартиры    всего за 10 минут" btns="Отправить"/>
+        <Linecont/>
         <InstallmentPlan/>
         <Linecont/>
        <NewsForPage/>

@@ -43,8 +43,10 @@ export const NewsMap = () => {
         <Swiper
           spaceBetween={30}
           pagination={{
-            dynamicBullets: true,
-            el: '#pagination'
+            clickable: true,
+            el: '#pagination',
+            bulletClass: style.bullet,
+            bulletActiveClass: style.bulletActive
           }}
           navigation={{
             prevEl: `#${prevId}`,
@@ -53,7 +55,7 @@ export const NewsMap = () => {
           }}
 
           modules={[Pagination, Navigation]}
-          
+
         >
           {
             NewsInfo.map(el => {
@@ -64,6 +66,7 @@ export const NewsMap = () => {
           }
         </Swiper>
         <div id="pagination" className={style.swiperPagination}></div>
+        
       </div>
     </>
   )

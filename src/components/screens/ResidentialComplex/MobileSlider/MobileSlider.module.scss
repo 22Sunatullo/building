@@ -1,24 +1,3 @@
-.swiper-pagination {
-    margin-top: 10px; // пример отступа сверху
-    text-align: center; // выравнивание по центру
-
-    .swiper-pagination-bullet {
-        background-color: #ddd; // измените этот цвет на желаемый
-        opacity: 1;
-        width: 8px;
-        height: 8px;
-        margin: 0 5px; // отступ между элементами пагинации
-
-        &:hover {
-            background-color: #999; // измените этот цвет на желаемый
-        }
-    }
-
-    .swiper-pagination-bullet-active {
-        background-color: #333; // измените этот цвет на желаемый
-    }
-}
-
 .bulletActive {
     display: block;
     background: var(--gold, linear-gradient(139deg, #A58038 0%, #FFCB7B 50%, #A58038 100%));
@@ -34,5 +13,5 @@
 .swiperPagination {
     display: flex;
     justify-content: center;
-    margin-top: 3;
+    margin-top: 3%;
 }

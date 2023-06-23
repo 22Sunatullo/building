@@ -1,6 +1,6 @@
-.ourAd { 
-    h1{
-        margin-bottom: 40px;
+.ourAd {
+    h1 {
+        margin: 5% 0 3% 0%;
     }
 }
 
@@ -13,12 +13,13 @@
 
 
 @media (max-width:480px) {
-    .data{
+    .data {
         grid-auto-rows: auto;
         grid-template-columns: repeat(2, 1fr);
     }
+
     .ourAd {
-        h1{
+        h1 {
             margin-bottom: 40px;
             font-size: 24px;
         }
