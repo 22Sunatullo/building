@@ -11,8 +11,8 @@ import { Navigation } from "swiper";
 
 export const ConstructionProgress = () => {
 
-    let prevId = "instagram-nav-prev";
-    let nextId = "instagram-nav-next";
+    let prevId = "day-nav-prev";
+    let nextId = "nextDay-nav-next";
 
     return (
         <div>

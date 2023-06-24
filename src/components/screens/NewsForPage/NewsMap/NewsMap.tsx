@@ -11,8 +11,8 @@ import NewsInfo from "../NewsInfo";
 import style from './NewsMap.module.scss';
 
 export const NewsMap = () => {
-  let prevId = "instagram-nav-prev";
-  let nextId = "instagram-nav-next";
+  let prevId = "news-nav-prev";
+  let nextId = "news-nav-next";
 
   return (
     <>

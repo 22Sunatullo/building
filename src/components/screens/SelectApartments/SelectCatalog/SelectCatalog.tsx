@@ -11,8 +11,8 @@ import { EffectCoverflow, Pagination, Navigation } from "swiper";
 import Image from "next/image";
 
 export const SelectCatalog = () => {
-  let prevId = "instagram-nav-prev";
-  let nextId = "instagram-nav-next";
+  let prevId = "nav-prev";
+  let nextId = "nav-next";
 
   return (
     <>

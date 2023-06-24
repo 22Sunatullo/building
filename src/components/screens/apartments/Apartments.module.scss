@@ -1,22 +1,60 @@
-.apart {
-    background-image: url('/assets/background/background3.png');
-    width: auto;
-    height: 700px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 300px 10px;
-}
-
-@media (max-width: 1024px) {
     .apart {
-        height: 460px;
-        margin-top: 0;
+        background-image: url('/assets/background/background3.png');
+        width: auto;
+        height: 700px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 300px 10px;
     }
-}
 
-@media (max-width: 480px) {
-    .apartaments{
+    .mobileS {
         display: none;
     }
-}
+
+    @media (max-width: 1024px) {
+        .apart {
+            height: 460px;
+            margin-top: 0;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .apartaments {
+            display: none;
+
+        }
+
+        .apart {
+            box-shadow: inset 0 0 309px rgba(0, 0, 0, 34.8), 0 0 20px rgba(0, 0, 0, 0.2), 0 0 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .mobileS {
+            display: block;
+
+            h3 {
+                color: var(--white, #FFF);
+                font-size: 15px;
+                font-family: Montserrat;
+                font-weight: 700;
+                line-height: 24px;
+
+            }
+
+            h1 {
+                font-size: 36px;
+                font-family: Montserrat;
+                font-weight: 700;
+                line-height: 40px;
+            }
+
+            p {
+                color: var(--white, #FFF);
+                /* Body S */
+                font-size: 13px;
+                font-family: Montserrat;
+                line-height: 20px;
+                margin-top: 4%;
+            }
+        }
+    }
