@@ -10,8 +10,10 @@ import Gelery from "@/components/screens/gelery/Gelery";
 import Linecont from "@/components/screens/linecont/Linecont";
 import { PerfectApartment } from "@/components/screens/perfectApartment/PerfectApartment";
 import { Wrapper } from "@/components/screens/wraper/Wraper";
-import Apartment from "@/components/screens/Apartment/Apartment"; 
+import Apartment from "@/components/screens/Apartment/Apartment";
 import { ConstructionProgress } from "@/components/screens/ConstructionProgress/ConstructionProgress";
+
+import style from './page.module.scss';
 
 export default function Home() {
   return (
@@ -19,23 +21,25 @@ export default function Home() {
       <Apartments />
       <Wrapper>
         <Aboutcomplex />
-        <Linecont />
+        <div className={style.lineblock}>
+          <Linecont />
+        </div>
         <Adres />
         <Linecont />
         <OurAdvatages />
         <Linecont />
         <Gelery />
         <Linecont />
-        <Apartment/>
+        <Apartment />
         <Consultation btns="Отправить" title='Индивидуальная консультация' text='Наши специалисты подберут для Вас самые лучшие условия приобретения квартиры    всего за 10 минут' />
         <Linecont />
         <PerfectApartment />
         <AreaAdres />
         <Linecont />
-        <ConstructionProgress/>
-        <Develope/>
-        <Contacts/>
-        <Consultation btns="Отправить заявку" title2='Оставьте заявку'/>
+        <ConstructionProgress />
+        <Develope />
+        <Contacts />
+        <Consultation btns="Отправить заявку" title2='Оставьте заявку' />
       </Wrapper>
     </div>
   );

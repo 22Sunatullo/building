@@ -6,7 +6,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import { Navigation } from "swiper";
+
+
 export const ConstructionProgress = () => {
+
+    let prevId = "instagram-nav-prev";
+    let nextId = "instagram-nav-next";
+
     return (
         <div>
             <div className={style.titleConstruction}>
@@ -38,12 +45,42 @@ export const ConstructionProgress = () => {
                     >
                         {
                             constructionData.map(el => {
-                                return <SwiperSlide> <button key={el.id}>{el.title}</button></SwiperSlide>
+                                return <SwiperSlide  key={el.id}> <button>{el.title}</button></SwiperSlide>
                             })
                         }
+
                     </Swiper>
                 </div>
+                <div className={style.sliderConstruction}>
+                    <button id={nextId} className={style.next}><Image src='/assets/logo/logo7.png' width={50} height={50} alt="logo8" /></button>
+                    <button  id={prevId} className={style.prev}><Image src='/assets/logo/logo8.png' width={50} height={50} alt="logo8" /></button>
+                    <Swiper
+                        spaceBetween={15}
+                        navigation={{
+                            prevEl: `#${prevId}`,
+                            nextEl: `#${nextId}`,
+                            enabled: true,
+                          }}
+                          modules={[
+                            Navigation
+                          ]}
+                    >
+                        <SwiperSlide>
+                            <Image width={200} height={400} alt='image' src='/assets/ConstructionProgress/Rectangle 8.png' />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image width={200} height={400} alt='image' src='/assets/ConstructionProgress/Rectangle 8.png' />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image width={200} height={400} alt='image' src='/assets/ConstructionProgress/Rectangle 8.png' />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Image width={200} height={400} alt='image' src='/assets/ConstructionProgress/Rectangle 8.png' />
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
+
             </div>
-        </div>
+        </div >
     )
 }
