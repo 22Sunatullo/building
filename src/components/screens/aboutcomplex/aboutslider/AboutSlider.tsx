@@ -45,21 +45,6 @@ export default function App() {
         <SwiperSlide>
           <Image width={200} height={300} alt="smm" src="/assets/slider/Rectangle 8.png" />
         </SwiperSlide>
-        <SwiperSlide>
-          <Image width={200} height={300} alt="smm" src="/assets/slider/Rectangle 8.png" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image width={200} height={300} alt="smm" src="/assets/slider/Rectangle 8.png" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image width={200} height={300} alt="smm" src="/assets/slider/Rectangle 8.png" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image width={200} height={300} alt="smm" src="/assets/slider/Rectangle 8.png" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image width={200} height={300} alt="smm" src="/assets/slider/Rectangle 8.png" />
-        </SwiperSlide>
         <div className={style.sliderController}>
           <div className={style.sliderBtnW}>
             <button className={style.btnImg} id={prevId}><Image width={200} height={300} alt="smm" src="/assets/logo/logo5.png" /></button>
