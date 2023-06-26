@@ -15,7 +15,7 @@ const Gelery = () => {
   let prevId = "instagram-nav-prev";
   let nextId = "instagram-nav-next";
   return (
-    <div>
+    <div id="galery">
       <div className={style.gelery}>
         <h1>Галерея фотографий</h1>
         <Swiper

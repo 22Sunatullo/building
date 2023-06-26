@@ -17,6 +17,14 @@
         margin-right: 20px;
     }
 
+    a{
+        transition: all ease-in .1s;
+    }
+    a:hover{
+        color:  #FFCB7B ;
+       
+    }
+
     .start {
         margin-top: 5px;
     }
@@ -58,6 +66,7 @@
             text-align: right;
             color: #FFFFFF;
         }
+     
         img {
             width: 125px;
             height: 36px;

@@ -1,11 +1,19 @@
 .coments {
-
+    h1{
+        margin-bottom: 3%;
+    }
     p {
-        width: 480px;
-        color: #fff;
+        width: 470px;
+        color: var(--day-text-icons-text-02-inverse, rgba(255, 255, 255, 0.72));
+        /* Body M */
+        font-size: 15px;
+        font-family: Montserrat;
         line-height: 24px;
-        margin-bottom: 20px;
+        margin-top: 2%;
 
+    }
+    button{
+        margin-top: 48px;
     }
 }
 

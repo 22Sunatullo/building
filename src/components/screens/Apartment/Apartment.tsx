@@ -21,12 +21,13 @@ function Apartment() {
 
   return (
     <>
-      <div className={style.TitleA}>
+      <div id="apartments" className={style.TitleA}>
         <h1 className="text-[36px] font-bold text-white mb-12">
           Выберите квартиру
         </h1>
         <div className={style.btnCont}>
-          {ApartmentCategories.map(el => <button onClick={() => { setApartCategoriesId(el.id) }} className="btnApr" key={el.id}>{el.name}</button>)}
+          {ApartmentCategories.map(el => <button 
+          onClick={() => { setApartCategoriesId(el.id) }}  className={el.id === apartCategoriesId ? "btnApr active" : "btnApr"} key={el.id}>{el.name}</button>)}
 
         </div>
         <div className={style.mobileBtn}>

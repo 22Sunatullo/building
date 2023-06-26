@@ -16,6 +16,8 @@ export const PerfectApartment = () => {
           <Buttons />
         </div>
       </div>
+
+      {/* ----------mobile-------- */}
       <div className={style.allSlider}> 
             <div className={style.sliderMob}>
             </div>

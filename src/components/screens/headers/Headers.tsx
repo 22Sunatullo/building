@@ -11,13 +11,16 @@ export const Headers = () => {
   return (
     <header className={style.wraperFix}>
       <nav className={style.fixhead}>
+        
         <nav className={style.container}>
+        <Link href="/.">
           <Image
-            src={"/assets/logo/logo2.png"}
+            src={"/assets/logo/logo2.svg"}
             width={150}
             height={150}
             alt="dd"
           />
+          </Link>
           <div className={
             nav ? [style.btnOver, style.active].join('') : [style.btnOver, ''].join('')
           }>
@@ -27,10 +30,10 @@ export const Headers = () => {
                   <a href="#">Проекты</a>
                 </li>
                 <li>
-                  <Link href="/apartments">Квартиры</Link>
+                  <Link href="/.#apartments">Квартиры</Link>
                 </li>
                 <li>
-                  <a href="#">Галерея</a>
+                  <Link href="/.#galery">Галерея</Link>
                 </li>
                 <li>
                   <a href="#">О компании</a>
@@ -48,11 +51,11 @@ export const Headers = () => {
           <nav onClick={() => setNav(!nav)} className={style.burger}>
             {nav ? (
               <button>
-                <Image src="/assets/logo/menu.png" width={0} height={0} alt="menu" />
+                <Image src="/assets/logo/closemenu.svg" width={0} height={0} alt="menu" />
               </button>
             ) : (
               <button>
-                <Image src="/assets/logo/menu.png" width={0} height={0} alt="22" />
+                <Image src="/assets/logo/menu.svg" width={0} height={0} alt="22" />
               </button>
             )}
           </nav>

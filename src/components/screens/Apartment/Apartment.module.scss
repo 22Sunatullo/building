@@ -3,7 +3,6 @@
 
   button {
     box-sizing: border-box;
-    /* Auto layout */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,13 +13,29 @@
     border-radius: 16px;
     font-weight: 600;
     font-size: 15px;
-    /* identical to box height, or 160% */
     display: flex;
-    /* White */
     color: #FFFFFF;
-    /* Inside auto layout */
   }
 }
+.btnApr{
+  button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    width: auto;
+    background: linear-gradient(112.92deg, rgba(255, 255, 255, 0.32) 10.45%, rgba(255, 255, 255, 0.08) 88.73%);
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    color: #FFFFFF;
+  }
+}
+
+
 
 .TitleA {
   margin-top: 6%;
