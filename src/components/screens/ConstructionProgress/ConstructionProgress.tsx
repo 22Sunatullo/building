@@ -30,13 +30,16 @@ export const ConstructionProgress = () => {
                         <Image width={200} height={400} alt='image' src='/assets/ConstructionProgress/Rectangle 8.png' />
                     </div>
                     <div>
-                        <Image width={200} height={400} alt='image' src='/assets/ConstructionProgress/Rectangle 8.png' />
+                        <Image width={200} height={400} alt='image' src='/assets/ConstructionProgress/Rectangle 9.png' />
                     </div>
                     <div>
-                        <Image width={200} height={400} alt='image' src='/assets/ConstructionProgress/Rectangle 8.png' />
+                        <Image width={200} height={400} alt='image' src='/assets/ConstructionProgress/Rectangle 11.png' />
                     </div>
                 </div>
             </div>
+
+            {/* -------------------------MobileSlider----------------------------------- */}
+
             <div className={style.mobileConstruction}>
                 <div className={style.constructionMobile}>
                     <Swiper

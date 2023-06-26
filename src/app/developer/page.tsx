@@ -12,17 +12,19 @@ export default function News() {
   return (
     <div>
       <Wrapper>
-        <ResidentialComplex/>
-        <Linecont/>
-        <Develope/>
-        <SoctialMedium/>
-        <Linecont/>
-        <InstallmentPlan/>
-        <Linecont/>
-        <NewsForPage/>
-        <Linecont/>
-        <SelectApartments/>
-        <Consultation btns="Отправить" title='Индивидуальная консультация' text='Наши специалисты подберут для Вас самые лучшие условия приобретения квартиры    всего за 10 минут'/>
+        <ResidentialComplex />
+        <Linecont />
+        <Develope title="О компании" coment="ООО «Сохтмони Осиёи Маркази» реализует строительство многофункционального жилого комплекса «82-TOWERS». 
+          За годы работы компания заслужила репутацию профессионала и надежного партнера в сфере строительства и управления проектами любой сложности.
+          Мы даем людям уверенность и надежность, мы делаем их жизнь лучше, помогая реализовывать устремления и мечты. Мы дорожим своей репутацией, поэтому основные ориентиры в нашей работе — это безопасность и качество."/>
+        <SoctialMedium />
+        <Linecont />
+        <InstallmentPlan />
+        <Linecont />
+        <NewsForPage />
+        <Linecont />
+        <SelectApartments />
+        <Consultation btns="Отправить" title='Индивидуальная консультация' text='Наши специалисты подберут для Вас самые лучшие условия приобретения квартиры    всего за 10 минут' />
       </Wrapper>
     </div>
   );
