@@ -41,7 +41,7 @@ export const Headers = () => {
               </ul>
             </nav>
             <nav className={style.end}>
-              <a href="#">+992 901 09 00 00</a>
+              <a href="tel:+992 901 09 00 00">+992 901 09 00 00</a>
               <Buttons />
             </nav>
           </div>
