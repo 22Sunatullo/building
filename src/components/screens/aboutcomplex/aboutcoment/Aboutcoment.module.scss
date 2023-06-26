@@ -1,7 +1,8 @@
 .coments {
-    h1{
+    h1 {
         margin-bottom: 3%;
     }
+
     p {
         width: 470px;
         color: var(--day-text-icons-text-02-inverse, rgba(255, 255, 255, 0.72));
@@ -12,7 +13,8 @@
         margin-top: 2%;
 
     }
-    button{
+
+    button {
         margin-top: 48px;
     }
 }
@@ -26,8 +28,19 @@
             margin-bottom: 1%;
         }
 
-        p{
-            width: auto;
+        p {
+            width: 400px;
+            font-size: 13px;
+            font-family: Montserrat;
+            line-height: 20px;
+        }
+
+        button {
+            margin-top: 1%;
+            font-size: 13px;
+            font-family: Montserrat;
+            font-weight: 700;
+            line-height: 20px;
         }
     }
 }
