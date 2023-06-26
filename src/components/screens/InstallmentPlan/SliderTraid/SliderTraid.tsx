@@ -31,7 +31,7 @@ export default function SliderTraid() {
             style={slideStyles}
             pagination= {{
               clickable: true,
-              el: '#pagination-container',
+              el: '#pagination-for-sale',
               bulletClass: style.bullet,
               bulletActiveClass: style.bulletActive
             }}
@@ -50,7 +50,7 @@ export default function SliderTraid() {
               <AutoTraid />
             </SwiperSlide>
           </Swiper>
-          <div id="pagination-container" className={style.swiperPagination}></div>
+          <div id="pagination-for-sale" className={style.swiperPagination}></div>
 
           <button id={prevId} className={style.btnRight}><Image src='/assets/logo/buttonRight.png' width={30} height={30} alt="button" /></button>
         </div>

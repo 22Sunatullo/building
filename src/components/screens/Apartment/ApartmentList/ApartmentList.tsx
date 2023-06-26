@@ -48,6 +48,12 @@ export const ApartmentList: FC<ListType> = ({ apartments }) => {
 
         <Swiper
           spaceBetween={20}
+          pagination={{
+            clickable: true,
+            el: '#pagination-apartment',
+            bulletClass: style.bullet,
+            bulletActiveClass: style.bulletActive
+          }}
           navigation={{
             prevEl: `#${prevId}`,
             nextEl: `#${nextId}`,
@@ -60,6 +66,7 @@ export const ApartmentList: FC<ListType> = ({ apartments }) => {
             apartments.map(el => <SwiperSlide key={el.id}> <ApartmentCard {...el} /> </SwiperSlide>)
           }
         </Swiper>
+        <div id="pagination-apartment" className={style.swiperPagination}></div>
       </div>
     </div>
   )

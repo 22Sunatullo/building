@@ -24,26 +24,14 @@ export default function App() {
         }}
         centeredSlides={true}
         loop={true}
+        slidesPerView={2}
+        spaceBetween={90}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
-          depth: 100,
-          modifier: 1.5,
-        }}
-        breakpoints={{
-          480: {
-            spaceBetween: 28,
-          },
-          769: {
-            slidesPerView: 2,
-            spaceBetween: 40,
-            centeredSlides: false,
-          },
-          1360: {
-            slidesPerView: 2,
-            spaceBetween: 48,
-            centeredSlides: false,
-          }
+          depth: 200,
+          modifier: 1,
+          slideShadows: false
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
         className={style.imgAuto}
@@ -73,10 +61,13 @@ export default function App() {
           <Image width={200} height={300} alt="smm" src="/assets/slider/Rectangle 8.png" />
         </SwiperSlide>
         <div className={style.sliderController}>
-          <button id={prevId}><Image width={200} height={300} alt="smm" src="/assets/logo/logo5.png" /></button>
-          <button  id={nextId}><Image width={200} height={300} alt="smm" src="/assets/logo/logo6.png" /></button>
+          <div className={style.sliderBtnW}>
+            <button className={style.btnImg} id={prevId}><Image width={200} height={300} alt="smm" src="/assets/logo/logo5.png" /></button>
+            <button className={style.btnImg2} id={nextId}><Image width={200} height={300} alt="smm" src="/assets/logo/logo6.png" /></button>
+          </div>
         </div>
       </Swiper>
+
     </>
   );
 }

@@ -1,12 +1,32 @@
 .sliderController{
-    margin-left: 80%;
     display: flex;
-    gap: 30px;
+    justify-content: right;
+    margin-right: 13%;
 }
 
-.imgAuto{
-    img{
+.sliderBtnW{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.imgAuto {
+    img {
         width: 100%;
         height: 100%;
+    }
+}
+
+.btnImg2 {
+    img {
+        width: 18px;
+        height: 23px;
+    }
+}
+
+.btnImg {
+    img {
+        width: 18px;
+        height: 23px;
     }
 }

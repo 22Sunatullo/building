@@ -36,9 +36,9 @@ export const SelectCatalog = () => {
           spaceBetween={20}
           pagination= {{
             clickable: true,
-            el: '#pagination-container',
+            el: '#pagination-for-select',
             bulletClass: style.bullet,
-            bulletActiveClass: style.bulletActive
+            bulletActiveClass: style.bulletActive,
           }}
           navigation={{
             prevEl: `#${prevId}`,
@@ -65,7 +65,7 @@ export const SelectCatalog = () => {
             alt="new"
           />
         </button>
-        <div id="pagination-container" className={style.pagination}></div>
+        <div id="pagination-for-select" className={style.pagination}></div>
         <div className={style.btnGold}>
           <button>
             Все квартиры

@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import { Navigation } from "swiper";
+import { Pagination, Navigation } from "swiper";
 
 import style from "./Gelery.module.scss";
 import { ButtonsSlider } from "./buttons/ButtonsSlider";
@@ -55,19 +55,25 @@ const Gelery = () => {
         </Swiper>
         <ButtonsSlider btnNprev={prevId} btnNnext={nextId} />
       </div>
+
       <div className={style.mobileGalery}>
-      <button id={prevId} className={style.prev}><Image src='/assets/logo/logo8.png' width={30} height={30} alt="logo8" /></button>
+        <button id={prevId} className={style.prev}><Image src='/assets/logo/logo8.png' width={30} height={30} alt="logo8" /></button>
         <Swiper
           navigation={{
             prevEl: `#${prevId}`,
             nextEl: `#${nextId}`,
             enabled: true,
           }}
-          modules={[
-            Navigation
-          ]}
+          pagination={{
+            clickable: true,
+            el: '#pagination-galery',
+            bulletClass: style.bullet,
+            bulletActiveClass: style.bulletActive
+          }}
+         
+          modules={[Pagination, Navigation]}
         >
-          
+
           <SwiperSlide>
             <MobileSlider image="/assets/galery/slider1.png" />
           </SwiperSlide>
@@ -78,6 +84,7 @@ const Gelery = () => {
             <MobileSlider image="/assets/galery/slider1.png" />
           </SwiperSlide>
         </Swiper>
+        <div id="pagination-galery" className={style.swiperPagination}></div>
         <button id={nextId} className={style.next}><Image src='/assets/logo/logo7.png' width={30} height={30} alt="logo8" /></button>
       </div>
     </div>

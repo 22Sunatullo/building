@@ -56,3 +56,24 @@
         margin: 5% 0;
     }
 }
+
+
+.bullet {
+    display: block;
+    width: 16px;
+    height: 8px;
+    border-radius: 16px;
+    margin-left: 2%;
+    background: var(--background, #EFE6E1);
+}
+
+.bulletActive {
+    display: block;
+    background: var(--gold, linear-gradient(139deg, #A58038 0%, #FFCB7B 50%, #A58038 100%));
+}
+
+.swiperPagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}

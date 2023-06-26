@@ -16,17 +16,22 @@
     z-index: 2;
 }
 
-.bulletActive {
-    display: block;
-    background: var(--gold, linear-gradient(139deg, #A58038 0%, #FFCB7B 50%, #A58038 100%));
-}
 
 .bullet {
     display: block;
     width: 16px;
     height: 8px;
     border-radius: 16px;
+    margin-left: 2%;
+    background: var(--background, #EFE6E1);
+    margin-top: -7%;
 }
+
+.bulletActive {
+    display: block;
+    background: var(--gold, linear-gradient(139deg, #A58038 0%, #FFCB7B 50%, #A58038 100%));
+}
+
 
 .swiperPagination {
     display: flex;
